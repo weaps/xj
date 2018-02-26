@@ -1,0 +1,253 @@
+/* login */
+.ucSimpleHeader {
+    /* height: 66px; */
+    margin: 0 auto;
+    position: relative;
+    padding: 1.5rem 0;
+    width: 980px;
+    overflow: hidden;
+}
+.ucSimpleHeader .register-text {
+    line-height: 68px;
+}
+
+.login-wrap {
+    height: 500px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.banner-show {
+    position: relative;
+    width: 980px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.left_content {
+    float: left;
+    width: 523px;
+    margin-left: 20px;
+}
+
+.register-box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 346px;
+    height: 400px;
+    background: white;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.reg-tab {
+    position: relative;
+    width: 396px;
+    height: 57px;
+    zoom: 1;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+}
+
+.reg-tab span {
+    float: left;
+    width: 198px;
+    height: 57px;
+    margin-left: -1px;
+    line-height: 57px;
+    text-align: center;
+    font-size: 24px;
+    color: #444;
+    border-left: 1px solid #d2d3d4;
+    background: url(../images/bg_tab_x.png?v=201406241538) repeat-x 0 0;
+    cursor: pointer;
+}
+
+.reg-tab span:first-child {
+    border-top-left-radius: 3px;
+}
+
+.reg-tab span:last-child {
+    border-top-right-radius: 3px;
+}
+
+.reg-tab span.current {
+    background: none;
+    cursor: default;
+}
+
+.reg-slogan {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.reg-form {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+}
+
+.reg-form .cell {
+    position: relative;
+    height: 40px;
+    margin-bottom: 22px;
+    zoom: 1;
+}
+
+.reg-form .cell .icon-form {
+    top: 11px;
+    right: 10px;
+}
+
+.reg-form .vcode input {
+    width: 150px;
+}
+
+.reg-form .vcode .button {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    width: 182px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.reg-form .vcode span {
+    position: absolute;
+    top: 0;
+    left: 264px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.reg-form .vcode .icon-form {
+    right: 204px;
+}
+
+.reg-form .vcode .login-popup-hint {
+    right: 194px;
+}
+
+.reg-form .user-agreement {
+    height: 16px;
+    margin-top: -22px;
+    padding: 18px 0;
+    line-height: 16px;
+}
+
+.reg-form .user-agreement input {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 1px 5px 0 0;
+}
+
+.reg-form .bottom {
+    height: 40px;
+}
+
+.reg-form .bottom .button {
+    display: block;
+    border-radius: 3px;
+}
+
+.reg-form .text,
+textarea {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid;
+    border-color: #CECECF;
+    border-radius: 0;
+    padding: 7px 10px 7px 35px;
+    background: white;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+
+.reg-form .text:focus,
+textarea:focus {
+    outline: none;
+    /* border-color: #84c225; */
+    /* box-shadow: 0 0 1px #84c225, inset 1px 1px 2px rgba(0, 0, 0, 0.1); */
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+.reg-form .text {
+    width: 100%;
+}
+
+.login-bottom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-bottom .btn_sign_in {
+    width: 100%;
+    margin: 0;
+}
+
+
+.reg-form .yzm {
+    display:inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: 40px;
+}
+
+.reg-form .yzm img {
+    width: 90px;
+    height: 24px;
+    vertical-align: middle;
+}
+.reg-form .cell i.icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 38px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.reg-form .cell input::-webkit-input-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.reg-form .cell input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.reg-form .cell input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.reg-form .cell input::-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+
+/* footer */
+
+.footer .content {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.footer .content a {
+    padding: 0 0.5rem;
+}
