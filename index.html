@@ -20,25 +20,37 @@
                 <a href="#">русский</a>/
                 <a href="#">ئۇيغۇرچە</a>
             </div>
-            <div class="col-lg-7 infomation">
-                <span class="usuallyText">你好，<a href="#">请登录</a></span>
-                <span class="registerText usuallyText"><a href="#">免费注册</a></span>
-                <span class="usuallyText">
-                    <a href="#">我的订单</a>
-                </span>
-                <span class="usuallyText">
-                    <a href="#">会员权益</a>
-                </span>
-                <span class="usuallyText arrow">
-                    收藏夹
-                    <i class="icon iconfont icon-arrowdown-copy"></i>
-                </span>
-                <span class="usuallyText">
-                    <a href="#">联系我们</a>
-                </span>
-                <span class="usuallyText">
-                    <a href="#">帮助中心</a>
-                </span>
+            <div class="col-lg-7">
+                <div class="infomation pull-right">
+                    <span class="usuallyText">你好，<a href="./account/login.html">请登录</a></span>
+                    <span class="registerText usuallyText">
+                        <a href="./account/register.html">免费注册</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">我的订单</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">会员权益</a>
+                    </span>
+                    <span class="usuallyText arrow">
+                        <em>收藏夹</em>
+                        <i class="icon iconfont icon-arrowdown-copy"></i>
+                        <div class="con arrowMenu">
+                            <ul>
+                                <li><a href="#">收藏的项目</a></li>
+                                <li>
+                                    <a href="#">收藏的专家</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">联系我们</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">帮助中心</a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -364,16 +376,22 @@
                     <div class="three-icon">
                         <ul>
                             <li>
-                                <span class="ico"><i class="icon iconfont icon-tiaochazhengji"></i></span>
-                                <p class="text">专利征集</p>
+                                <a href="#">
+                                    <span class="ico"><i class="icon iconfont icon-tiaochazhengji"></i></span>
+                                    <p class="text">专利征集</p>
+                                </a>
                             </li>
                             <li>
-                                <span class="ico"><i class="icon iconfont icon-chengguo"></i></span>
-                                <p class="text">代售专利</p>
+                                <a href="#">
+                                    <span class="ico"><i class="icon iconfont icon-shouhou"></i></span>
+                                    <p class="text">代售专利</p>
+                                </a>
                             </li>
                             <li>
-                                <span class="ico"><i class="icon iconfont icon-aibaike"></i></span>
-                                <p class="text">知识百科</p>
+                                <a href="#">
+                                    <span class="ico"><i class="icon iconfont icon-aibaike"></i></span>
+                                    <p class="text">知识百科</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -402,7 +420,7 @@
 
                     <!-- 当前在线人数 -->
                     <div class="onlineNum">
-                        当前在线人数：<strong>120,432</strong>
+                        当前在线人数：<strong class="counter" id="myTargetElement">0</strong>
                     </div>
                 </div>
             </div>
@@ -1374,6 +1392,9 @@
     </div>
 </div>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!-- 数字滚动 -->
+<script type="text/javascript" src="./js/countup/countUp.js"></script>
+<script type="text/javascript" src="./js/countup/countupText.js"></script>
 <!-- 产品图切换 -->
 <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
 <!-- 搜索 -->

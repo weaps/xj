@@ -1,0 +1,97 @@
+body {
+    background-color: #f6f6f6;
+}
+.header {
+    border-bottom: 2px solid #cf3529;
+    background-color: #fff;
+}
+.sub-headcontainer {
+    padding: 20px 0;
+}
+.sub-headcontainer .sub-nav {
+    height: 30px;
+    line-height: 30px;
+    margin: 19px 0;
+    text-align: right;
+}
+.sub-headcontainer .sub-nav li {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 1rem;
+}
+.sub-headcontainer .sub-nav li:last-child {
+    padding-right: 0;
+}
+.sub-headcontainer .sub-nav li a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+.sub-headcontainer .sub-nav li a.active {
+    color: #cf3529;
+}
+
+/* banner */
+.bannerContainer {
+    width: 100%;
+    height: 265px;
+    background: -webkit-linear-gradient(to top, #ba764f, #d3a17c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ba764f, #d3a17c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+.bannerContainer .imgbox {
+    width: 100%;
+    height: 265px;
+    background: url("../images/sub-banner.png") no-repeat center;
+}
+.sub-containerBox {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.breadcrumb {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+}
+.breadcrumb li {
+    display: inline-block;
+}
+.breadcrumb li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/";
+}
+.sub-news-container {
+    padding: 20px;
+}
+.sub-news-container li {
+    display: block;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+    overflow: hidden;
+}
+.sub-news-container li .imgbox {
+    float: left;
+    width: 160px;
+    height: 120px;
+    background: #ddd;
+}
+.sub-news-container li .textCon {
+    float: right;
+    width: 100%;
+    height: 120px;
+}
+.sub-news-container li .imgbox ~ .textCon {
+    width: 560px;
+}
+
+.sub-news-container li .textCon .title {
+    line-height: 30px;
+    font-size: 18px;
+}

@@ -7,9 +7,11 @@
     width: 980px;
     overflow: hidden;
 }
-.ucSimpleHeader .register-text {
-    line-height: 68px;
+
+.ucSimpleHeader .tipsText {
+    line-height: 74px;
 }
+
 
 .login-wrap {
     height: 500px;
@@ -156,7 +158,7 @@
 }
 
 .reg-form .text,
-textarea {
+.register-form .register-input {
     line-height: 24px;
     font-size: 14px;
     font-weight: bold;
@@ -172,10 +174,8 @@ textarea {
 }
 
 .reg-form .text:focus,
-textarea:focus {
+.register-form .register-input:focus {
     outline: none;
-    /* border-color: #84c225; */
-    /* box-shadow: 0 0 1px #84c225, inset 1px 1px 2px rgba(0, 0, 0, 0.1); */
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     border-color: #bbb;
 }
@@ -186,7 +186,13 @@ textarea:focus {
 
 .login-bottom {
     width: 100%;
+    padding-top: 20px;
     overflow: hidden;
+}
+.login-bottom .btn,
+.register-btn .btn {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
 }
 
 .login-bottom .btn_sign_in {
@@ -220,29 +226,127 @@ textarea:focus {
     font-size: 1.2rem;
 }
 
-.reg-form .cell input::-webkit-input-placeholder {
+.reg-form .cell input:-webkit-input-placeholder,
+.register-form input:-webkit-input-placeholder {
     color: #999;
     font-weight: normal;
 }
 
-.reg-form .cell input:-ms-input-placeholder {
+.reg-form .cell input:-ms-input-placeholder,
+.register-form input:-ms-input-placeholder {
     color: #999;
     font-weight: normal;
 }
 
-.reg-form .cell input:-moz-placeholder {
+.reg-form .cell input:-moz-placeholder,
+.register-form input:-moz-input-placeholder {
     color: #999;
     font-weight: normal;
 }
 
-.reg-form .cell input::-moz-placeholder {
+/* 注册 */
+
+.register-container {
+    width: 100%;
+    padding-top: 40px;
+    border-top: 1px solid rgba(221, 221, 221, .5);
+}
+.register-wrap {
+    width: 680px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.register-form {
+    display: block;
+    width: 580px;
+    padding: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.register-form .radio {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.register-form .radio label {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.register-form .radio input[type=radio] {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.register-form dl {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.register-form dt {
+    float: left;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    text-align: right;
+}
+.register-form dd {
+    position: relative;
+    float: right;
+    width: 380px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.register-form dd input.register-input {
+    width: 100%;
+}
+.register-form dd i.icon {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 20px;
+    color: #ddd;
+}
+
+.register-form .register-input:focus ~ .icon {
     color: #999;
-    font-weight: normal;
+}
+.register-form dd input.register-input.vcode {
+    width: 200px;
+}
+.register-form .manage-box {
+    float: right;
+    width: 175px;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.register-form .manage-box .btn {
+    padding: .66rem 2rem;
+    border-radius: 4px;
+}
+.register-form .yzm-img img {
+    vertical-align: middle;
+}
+.register-form .register-btn .btn {
+    padding-top:0.65rem;
+    padding-bottom:0.65rem;
 }
 
 
 /* footer */
-
+.register-footer {
+    border-top: 1px solid rgba(221, 221, 221, .5);
+}
 .footer .content {
     width: 100%;
     padding-top: 2rem;
@@ -250,4 +354,8 @@ textarea:focus {
 
 .footer .content a {
     padding: 0 0.5rem;
+    color: #666;
+}
+.footer .content p {
+    line-height: 30px;
 }

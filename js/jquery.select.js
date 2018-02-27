@@ -69,4 +69,18 @@
 		}
 	}
 
+	//顶部导航下拉菜单
+	$(".usuallyText.arrow").hover(function () {
+		// $(this).addClass("hover").siblings().removeClass("hover");
+		$(this).find("usuallyText arrow").addClass("hover");
+		$(this).find(".con").show();
+	},
+	function () {
+		//$(this).css("background-color","#f5f5f5");
+		$(this).find(".con").hide();
+		//$(this).find(".nav a").removeClass("hover");
+		// $(this).removeClass("hover");
+		// $(this).find(".nav a").removeClass("hover");
+	})
+
 })(jQuery)
