@@ -854,15 +854,9 @@ body {
     width: 100%;
     overflow: hidden;
 }
-
-.order-tb tbody {
-    margin-top: 20px;
+.order-tb table {
+    font-size: 12px;
 }
-
-.order-tb td {
-    background: #fff;
-}
-
 .order-tb .ordertime-cont {
     position: relative;
     float: left;
