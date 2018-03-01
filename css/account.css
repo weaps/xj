@@ -855,19 +855,6 @@ body {
     overflow: hidden;
 }
 
-.order-tb table {
-    width: 100%;
-}
-
-.order-tb thead th {
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: #fff;
-    color: #666;
-    font-weight: 600;
-}
-
 .order-tb tbody {
     margin-top: 20px;
 }
