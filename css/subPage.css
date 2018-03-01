@@ -44,12 +44,6 @@ body {
     height: 265px;
     background: url("../images/sub-banner.png") no-repeat center;
 }
-.sub-containerBox {
-    width: 100%;
-    background: #fff;
-    overflow: hidden;
-    box-sizing: border-box;
-}
 
 .breadcrumb {
     padding: 15px;
@@ -67,6 +61,13 @@ body {
 }
 .sub-news-container {
     padding: 20px;
+    box-sizing: border-box;
+}
+.sub-news-container ul,
+.sub-news-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
 }
 .sub-news-container li {
     display: block;
@@ -77,10 +78,25 @@ body {
     overflow: hidden;
 }
 .sub-news-container li .imgbox {
+    position: relative;
     float: left;
     width: 160px;
     height: 120px;
-    background: #ddd;
+    background: #eee;
+}
+.sub-news-container li .imgbox:after {
+    position: absolute;
+    left: 20px;
+    content: "新疆分中心";
+    line-height: 120px;
+    font-size: 24px;
+    color: #ddd;
+    z-index: 0;
+}
+.sub-news-container li .imgbox img {
+    position: relative;
+    width: 100%;
+    z-index: 2;
 }
 .sub-news-container li .textCon {
     float: right;
@@ -88,10 +104,233 @@ body {
     height: 120px;
 }
 .sub-news-container li .imgbox ~ .textCon {
-    width: 560px;
+    width: 550px;
 }
 
 .sub-news-container li .textCon .title {
     line-height: 30px;
     font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+.sub-news-container li .textCon .title a{
+    color: #333;
+    text-decoration: none;
+}
+.sub-news-container li .textCon .title a:hover {
+    color: #cf3529;
+}
+.sub-news-container li .textCon p {
+    height: 65px;
+    font-size: 14px;
+    color: #999;
+    text-align: justify;
+}
+.sub-news-container li .textCon .info {
+    height: 24px;
+}
+.sub-news-container li .textCon .info span {
+    font-size: 12px;
+    color: #666;
+}
+.sub-news-container li .textCon .info span.view {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 18px;
+    margin-left: 20px;
+}
+.info span.view .icon {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.sub-ad img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/*hot news*/
+
+.hot-news {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+.m-title {
+    width: 100%;
+    line-height: 40px;
+    border-top: 1px solid #cf3529;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+    text-align: center;
+}
+
+.hot-news ul {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hot-news li {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.hot-news .imgleft {
+    position: relative;
+    float: left;
+    width: 104px;
+    height: 78px;
+    background: #eee;
+}
+.hot-news .imgleft:after {
+    position: absolute;
+    left: 13px;
+    content: "新疆分中心";
+    line-height: 78px;
+    font-size: 16px;
+    color: #ddd;
+    z-index: 0;
+}
+.hot-news .imgleft img {
+    position: relative;
+    z-index: 2;
+}
+
+.hot-news .righttext {
+    float: right;
+    width: 210px;
+    height: 78px;
+}
+
+.hot-news .righttext .title {
+    display: block;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 54px;
+    overflow: hidden;
+}
+
+.hot-news .righttext a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+}
+
+.hot-news .righttext a:hover {
+    color: #cf3529;
+    text-decoration: none;
+}
+
+.hot-news .righttext .tag {
+    padding-top: 4px;
+    font-size: 12px;
+    font-style: normal;
+    color: #9b9b9b;
+}
+
+/* 新闻内容详情 */
+/*内容页*/
+
+.article-wrap {
+    padding: 0 20px 40px 20px;
+}
+
+.article-wrap .title {
+    font-size: 28px;
+    position: inherit;
+    line-height: 1.5;
+    color: #333;
+    word-wrap: break-word;
+    word-break: normal;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 100;
+}
+
+.article-content,
+.thumbs {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.article-content .img-box,
+.article-content p,
+.next-page,
+.article-tab {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.article-content .img-box img {
+    width: 100%;
+}
+
+.article-content p {
+    display: block;
+    padding: 20px 0;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+/*page*/
+
+.article-wrap .page {
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.article-wrap .page a {
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #eee;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #999;
+    box-sizing: border-box;
+}
+
+.article-wrap .page a:hover {
+    border: 1px solid #ddd;
+    color: #666;
+}
+
+.article-wrap .page .num {
+    width: 24px;
+}
+
+.article-wrap .page .active {
+    border: 1px solid #cf3529;
+    background: #cf3529;
+    color: #fff;
+}
+.article-wrap .page a:hover.active {
+    color: #fff;
+    border-color: #cf3529;
+}
+
+.article-wrap .page .next,
+.article-wrap .page .all {
+    padding: 0 8px;
 }

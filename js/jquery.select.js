@@ -83,4 +83,17 @@
 		// $(this).find(".nav a").removeClass("hover");
 	})
 
+	//footer 
+
+	$(".footLink").slide({
+		// titCell: ".linebox",
+		mainCell: ".f-img-con",
+		autoPage: true,
+		effect: "left",
+		autoPlay: true,
+		scroll: 5,
+		vis: 5,
+		delayTime: 1500
+	});
+
 })(jQuery)
