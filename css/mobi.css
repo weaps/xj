@@ -777,6 +777,11 @@ a.text-primary {
     float: left;
     padding: 0 .8rem;
 }
+.infomation .usuallyText a.username {
+    color: #CF3529;
+    text-decoration: none;
+    margin-right: 10px;
+}
 .infomation .usuallyText.arrow {
     width: 84px;
     border-left: 1px solid transparent;
