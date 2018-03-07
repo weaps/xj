@@ -838,7 +838,6 @@ a.text-primary {
     position: absolute;
     left: -1px;
     top: 35px;
-    /* max-width: 84px; */
     width: 120px;
     border: 1px solid rgba(221, 221, 221, .5);
     border-top: 0;
@@ -870,8 +869,6 @@ a.text-primary {
     text-overflow: ellipsis;
 }
 .text-whitespace {
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -1133,4 +1130,22 @@ a.text-primary {
     width: 100%;
     overflow: hidden;
     margin-bottom: 15px;
+}
+
+/* 面包屑 */
+.breadcrumb {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+}
+
+.breadcrumb li {
+    display: inline-block;
+}
+
+.breadcrumb li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/";
 }

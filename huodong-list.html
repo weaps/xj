@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>列表2</title>
+    <title>活动列表</title>
     <link rel="stylesheet" href="./css/mobi.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/body-page.css">
@@ -147,66 +147,89 @@
                     <div class="col-lg-9">
                         <!-- 帅选 -->
                         <div class="view-category-list">
-                            <!-- 行业 -->
-                            <div class="list-item">
-                                <!-- <div class="title">行业：</div> -->
+                            <div class="list-item list-item-1">
+                                <div class="title">活动类型：</div>
+                                <ul id="filterByDate">
+                                    <li class="active">
+                                        <a href="#">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">线下活动</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">产学研在线</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">在线展会</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">培训沙龙</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">大型活动</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">其它</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-item list-item-1">
+                                <div class="title">时间年限：</div>
+                                <ul id="filterByDate">
+                                    <li class="active">
+                                        <a href="#">全部</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">今年</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">去年</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2016</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2015</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2014</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2013</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-item list-item-1">
+                                <div class="title">地区选择：</div>
                                 <div class="list2-con">
                                     <div class="row">
-                                        <div class="col-lg-4">
-                                            <span class="selectLabel">行业类型：</span>
-                                            <select name="select-hy" class="form-control" >
-                                                <option value="">-- 请选择 --</option>
+                                        <div class="col-lg-3">
+                                            <select name="select-hy" class="form-control">
+                                                <option value="">-- 选择省 --</option>
                                                 <option>食品饮料</option>
                                                 <option>建筑建材 </option>
                                                 <option>家居用品</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-4">
-                                            <span class="selectLabel">机构类型：</span>
+                                        <div class="col-lg-3">
                                             <select name="select-hy" class="form-control">
-                                                <option value="">-- 请选择 --</option>
+                                                <option value="">-- 选择市 --</option>
                                                 <option>食品饮料</option>
                                                 <option>建筑建材 </option>
                                                 <option>家居用品</option>
-                                                <option>轻工纺织</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-4">
-                                            <span class="selectLabel">合作方式：</span>
+                                        <div class="col-lg-3">
                                             <select name="select-hy" class="form-control">
-                                                <option value="">-- 请选择 --</option>
+                                                <option value="">-- 选择区/县 --</option>
                                                 <option>食品饮料</option>
                                                 <option>建筑建材 </option>
                                                 <option>家居用品</option>
-                                                <option>轻工纺织</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="list2-con">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <span class="selectLabel">预算金额：</span>
-                                            <select name="select-hy" class="form-control">
-                                                <option value="">-- 请选择 --</option>
-                                                <option>食品饮料</option>
-                                                <option>建筑建材 </option>
-                                                <option>家居用品</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <span class="selectLabel">需求类型：</span>
-                                            <select name="select-hy" class="form-control">
-                                                <option value="">-- 请选择 --</option>
-                                                <option>食品饮料</option>
-                                                <option>建筑建材 </option>
-                                                <option>家居用品</option>
-                                                <option>轻工纺织</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                      
+                            </div>                     
                         
                         </div>
                         <!-- 帅选end -->
@@ -214,56 +237,64 @@
                             <ul class="event-vertical-list-new huodong">
                                 <li>
                                     <div class="li-con">
-                                        <a class="imgbox" href="./list-container.html">
+                                        <a class="imgbox" href="./huodong-list-container.html">
+                                            <span class="status jxz">
+                                                <i class="icon iconfont icon-jinhangzhong1"></i>
+                                            </span>
                                             <img src="./img/h1.jpg" alt="">
                                         </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">No.42‖周六7.29樊登读书会【零基础油画体验 给夏天加点色彩】</a>
+                                                <a target="_blank" href="./huodong-list-container.html">No.42‖周六7.29樊登读书会【零基础油画体验 给夏天加点色彩】</a>
                                             </h3>
                                             <div class="info">
-                                                <span class="time">02-10</span>
-                                                <span></span>
+                                                <span class="time">2018年03月22日 09:00 ～ 11:00</span>
                                                 <span class="shoucang">
                                                     <i class="icon iconfont icon-shoucang"></i>
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox"></a>
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
+                                            <img src="./img/h2.jpg" alt="">
+                                        </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">江苏 泰州 海陵区 果蔬精深加工及远红外杀菌技术</a>
+                                                <a target="_blank" href="./huodong-list-container.html">江苏 泰州 海陵区 果蔬精深加工及远红外杀菌技术</a>
                                             </h3>
                                             <div class="info">
-                                                <span class="time">02-10</span>
-                                                <span></span>
+                                                <span class="time">2018年03月22日 09:00 ～ 11:00</span>
                                                 <span class="shoucang">
                                                     <i class="icon iconfont icon-shoucang"></i>
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox"></a>
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
+                                        </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -273,19 +304,22 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox"></a>
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
+                                        </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -295,19 +329,22 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox"></a>
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
+                                        </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -317,19 +354,22 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox"></a>
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
+                                        </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -339,21 +379,23 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox">
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
                                             <img src="img/h3.jpg" alt="">
                                         </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -363,21 +405,23 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-con">
-                                        <a href="./list-container.html" class="imgbox">
+                                        <a href="./huodong-list-container.html" class="imgbox">
+                                            <span class="status yjs">
+                                                <i class="icon iconfont icon-yijieshu"></i>
+                                            </span>
                                             <img src="img/h2.jpg" alt="">
                                         </a>
                                         <div class="event-info">
                                             <h3>
-                                                <a target="_blank" href="./list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
+                                                <a target="_blank" href="./huodong-list-container.html">PM必听的免费试听课，20年项目总监经验免费学</a>
                                             </h3>
                                             <div class="info">
                                                 <span class="time">02-10</span>
@@ -387,9 +431,8 @@
                                                     44
                                                 </span>
                                             </div>
-                                            <p class="btnbox">
-                                                <button class="btn btn-danger btn-block">
-                                                    <i class="icon iconfont icon-fankui"></i>在线咨询</button>
+                                            <p class="zb">
+                                                主办方：<a href="#">深圳市龙岗区科技创新局</a>
                                             </p>
                                         </div>
                                     </div>

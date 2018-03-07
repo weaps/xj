@@ -45,20 +45,6 @@ body {
     background: url("../images/sub-banner.png") no-repeat center;
 }
 
-.breadcrumb {
-    padding: 15px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    border-bottom: 1px solid rgba(221, 221, 221, .5);
-}
-.breadcrumb li {
-    display: inline-block;
-}
-.breadcrumb li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    content: "/";
-}
 .sub-news-container {
     padding: 20px;
     box-sizing: border-box;

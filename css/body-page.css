@@ -788,6 +788,10 @@ body {
 }
 .zhuanjia-box {
     width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.index-product-box.zhuanjia .zhuanjia-box {
     height: 350px;
 }
 .zhuanjia-box li {
@@ -927,6 +931,12 @@ body {
     padding-left: 54px;
     transition: all 0.5s ease;
     overflow: hidden;
+}
+.view-list2-con .view-category-list .list-item.list-item-1 {
+   padding-left: 80px;
+}
+.view-list2-con .view-category-list .list-item.list-item-1 .title {
+    margin-left: -80px;
 }
 .view-category-list .list-item:last-child {
     border-bottom: 0;
@@ -1103,6 +1113,10 @@ body {
 }
 
 /* list 2 */
+.view-list2-con .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
 .event-vertical-list-new {
     width: 100%;
     overflow: hidden;
@@ -1111,18 +1125,26 @@ body {
 .event-vertical-list-new li {
     float: left;
     overflow: hidden;
-    width: 280px;
-    margin: 0 0 30px 15px;
-    padding-bottom: 5px;
-    border: 1px solid #dfdede;
-    background: #fff;
-    box-sizing: border-box;
+    margin-bottom: 40px;
 }
 .event-vertical-list-new li {
     border-color: #f5f5f5;
     transition: all 0.5s ease;
 }
-.event-vertical-list-new li:first-child,
+.event-vertical-list-new li .li-con {
+    margin: 0 auto;
+    border: 1px solid rgba(221, 221, 221, .5);
+    background: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.huodong.event-vertical-list-new li {
+    width: 33.3333%;
+}
+.huodong.event-vertical-list-new li .li-con {
+    width: 274px;
+}
+/* .event-vertical-list-new li:first-child,
 .event-vertical-list-new li:nth-child(4),
 .event-vertical-list-new li:nth-child(7),
 .event-vertical-list-new li:nth-child(10),
@@ -1132,7 +1154,7 @@ body {
 .event-vertical-list-new li:nth-child(22),
 .event-vertical-list-new li:nth-child(25) {
     margin-left: 0;
-}
+} */
 .list2-con {
     padding-top: 15px;
 }
@@ -1162,7 +1184,7 @@ body {
 .view-list2-con .imgbox img {
     display: inline-block;
     width: 100%;
-    height: 165px;
+    /* height: 165px; */
     vertical-align: top;
 }
 .view-list2-con .event-info {
@@ -1181,10 +1203,6 @@ body {
     text-align: right;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(221, 221, 221, .5);
-}
-.view-list2-con li .info span {
-    display: inline-block;
-    padding-left: 10px;
 }
 .view-list2-con li .iconfont,
 .view-list-con li .iconfont {
@@ -1205,6 +1223,10 @@ body {
     width: 100%;
     padding-top: 20px;
 }
+.view-list2-con .event-vertical-list-new.huodong li .zb {
+    padding: 10px 0;
+    font-size: 14px;
+}
 
 
 /* list 内容详情页 */
@@ -1223,7 +1245,7 @@ body {
 .poi-detail .seller-view {
     position: relative;
     float: right;
-    width: 384px;
+    width: 370px;
     height: 280px;
     background: #eee;
 }
@@ -1267,6 +1289,15 @@ body {
     height: 30px;
     line-height: 30px;
 }
+.jianjie {
+    padding: 10px 0 0 80px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.jianjie .title {
+    float: left;
+    margin-left: -80px;
+}
 .seller-btnbox {
     width: 100%;
     height: 34px;
@@ -1275,11 +1306,45 @@ body {
 .seller-btnbox .btn:first-child {
     margin-right: 40px;
 }
-
+.detail-descript .huodongContainerTab {
+    position: relative;
+    height: 40px;
+    background: #fafafa;
+}
+.detail-descript .huodongContainerTab:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(221, 221, 221, .5);
+}
+.detail-descript .huodongContainerTab li {
+    display: inline-block;
+    line-height: 40px;
+    cursor: pointer;
+}
+.detail-descript .huodongContainerTab li.active {
+    /* background: #fff; */
+    height: 40px;
+    border-bottom: 2px solid #cf3529;
+    box-sizing: border-box;
+}
+.detail-descript .huodongContainerTab li.active span {
+    color: #cf3529;
+    font-weight: 600;
+    /* border: 0; */
+}
+.detail-descript .huodongContainerTab li span {
+    font-size: 14px;
+    padding: 0 40px;
+    border-right: 1px dotted #ddd;
+}
 .detail-container,
 .detail-descript .xn-ds {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 40px;
     overflow: hidden;
 }
 .detail-descript ol {
@@ -1287,8 +1352,20 @@ body {
     padding: 20px 0;
     overflow: hidden;
 }
+.detail-descript .zhuanjia-box ul li {
+    width: 50%;
+}
 .detail-descript .xn-ds {
     padding-bottom: 40px;
+    font-size: 14px;
+}
+.detail-descript .xn-ds > p {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 30px;
 }
 .detail-descript .title {
     line-height: 40px;
@@ -1310,4 +1387,84 @@ body {
 .detail-descript dl dd {
     font-size: 14px;
     line-height: 30px;
+}
+
+
+/* 专家列表页面 */
+.zhuanjia-container {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+    
+}
+
+.zhuanjia-container .zhuanjieTab {
+    height: 40px;
+    margin-bottom: 40px;
+}
+.zhuanjia-container .zhuanjieTab ul {
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+}
+.zhuanjia-container .zhuanjieTab li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    background: #fafafa;
+    border: 1px solid rgba(221, 221, 221, .5);
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.zhuanjia-container .zhuanjieTab li.active {
+    background: #cf3529;
+    border-color: #cf3529;
+    color: #fff;
+}
+.zhuanjia-box {
+    border: 1px solid rgba(221, 221, 221, .5);
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.zutuan-zhuanjia .event-vertical-list-new li {
+    width: 25%;
+}
+.zutuan-zhuanjia .event-vertical-list-new .li-con {
+    width: 272px;
+    margin: 0 auto;
+}
+.huodong.event-vertical-list-new .li-con .imgbox {
+    position: relative;
+}
+.huodong .li-con .imgbox .status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    z-index: 11;
+}
+.huodong .li-con .imgbox .status:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    border: 35px solid transparent;  
+    border-color: #fff #fff transparent transparent;
+    z-index: -1;
+}
+.huodong .li-con .imgbox .status.jxz .iconfont {
+    color: #05CC47;
+}
+.huodong .li-con .imgbox .status.yjs .iconfont {
+    color: #999;
+}
+.huodong .li-con .imgbox .status .iconfont {
+    font-size: 72px;
+    margin: 0;
+    line-height: 72px;
 }
