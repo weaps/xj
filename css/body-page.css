@@ -1468,3 +1468,214 @@ body {
     margin: 0;
     line-height: 72px;
 }
+
+/* 拍卖 */
+
+.sub-containerBox.paimai {
+    padding: 180px 0 40px 0;
+    background: #fff url(../images/paimai-banner.jpg) no-repeat center top;
+}
+.paimai .gonggao {
+    padding-left: 100px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 12px;
+    border-bottom: 2px solid rgba(221, 221, 221, .5);
+}
+.paimai .gonggao .title {
+    float: left;
+    margin-left: -80px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.paimai .gonggao li {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 12px;
+}
+.paimai .paimai-tab {
+    height: 50px;
+    margin: 10px 0;
+}
+.paimai .paimai-tab li {
+    display: inline-block;
+    padding: 0 40px;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.paimai .paimai-tab li.active {
+    border-color: #cf3529;
+}
+.paimai .status {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.paimai .status span.statusLi {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+}
+.paimai .status span.statusLi em {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+.paimai .status span.statusLi:first-child em{
+    background: #05CC47;
+}
+.paimai .status span.statusLi:nth-child(2) em {
+    background: #4FB0FF;
+}
+.paimai .status span.statusLi:nth-child(3) em {
+    background: #cf3529;
+}
+.paimai .status span.statusLi:nth-child(4) em {
+    background: #333;
+}
+.paimai .paimai-form input {
+    height: 28px;
+    width: 200px;
+}
+.paimai .paimai-form .btn {
+    height: 26px;
+}
+.paimai .table{
+    font-size: 12px;
+}
+
+.paimai .table td,
+.paimai .table th{
+    padding: 0.8rem 0.3125rem;
+    text-align: left;
+}
+.paimai .table td > a {
+    color: #333;
+}
+.sub-list-container.paimai .poi-detail .seller-info-body {
+    border-bottom: 0;
+}
+.paimai .detail-descript ol {
+    padding-left: 40px;
+    box-sizing: border-box
+}
+.paimai .detail-descript ol li {
+    line-height: 30px;
+}
+.paimai .seller-btnbox .sli {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+.paimai .seller-btnbox .sli:first-child {
+    padding-left: 0;
+}
+.paimai .seller-btnbox .sli:after {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    content: "";
+    height: 12px;
+    border-right: 1px dashed rgba(221, 221, 221, .5);
+}
+.paimai .seller-btnbox .sli:last-child:after {
+    display: none;
+}
+
+
+/* 政策信息库 */
+
+.zcxxk-banner {
+    height: 300px;
+    background: url(../images/zcxxk-banner.jpg) center 0 no-repeat #fff;
+}
+.zcxxk-banner .linear {
+    height: 300px;
+    padding-top: 40px;
+    /* background: #7b4397; */
+    background: -webkit-linear-gradient(to bottom, transparent, #fff);
+    background: linear-gradient(to bottom, transparent, #fff);
+
+}
+.zcxxk-form {
+    position: relative;
+    display: block;
+    width: 400px;
+    padding-right: 69px;
+    margin: 0px auto;
+}
+.zcxxk-form input {
+    border-radius: 2px 0 0 2px;
+    height: 32px;
+}
+.zcxxk-form .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 32px;
+    border-radius: 0 2px 2px 0;
+}
+
+.zcxxk .shuaixuan {
+    width: 800px;
+    margin: 0 auto;
+}
+.zcxxk .shuaixuan ul {
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zcxxk .shuaixuan li {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-left: 80px;
+    font-size: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.zcxxk .shuaixuan li .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 5px;
+}
+.zcxxk .shuaixuan li .con {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.zcxxk .shuaixuan li .con span {
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 10px;
+    border: 1px solid rgba(221, 221, 221, .5);
+    border-radius: 15px;
+    background: #fff;
+    margin-right: 10px;
+}
+.zcxxk .shuaixuan li .con span.active {
+    background: #cf3529;
+    border-color: #cf3529;
+    color: #fff;
+}
+.zcxxk .table {
+    font-size: 14px;
+}
+.zcxxk .table tr > td,
+.zcxxk .table tr > th {
+    padding: 5px 15px;
+}
+.zcxxk .table tr > td:first-child,
+.zcxxk .table tr > th:first-child,
+.zcxxk .table tr > td:last-child,
+.zcxxk .table tr > th:last-child {
+    text-align: center;
+}
