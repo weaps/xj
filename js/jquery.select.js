@@ -1,6 +1,6 @@
 (function($){
 
-	var selects=$('select');//获取select
+	var selects = $('#choose'); //获取select
 
 	for(var i=0;i<selects.length;i++){
 		createSelect(selects[i],i);
