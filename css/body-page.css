@@ -1224,8 +1224,24 @@ body {
     padding-top: 20px;
 }
 .view-list2-con .event-vertical-list-new.huodong li .zb {
-    padding: 10px 0;
-    font-size: 14px;
+    /* padding: 10px 0; */
+    position: relative;
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 12px;
+}
+.view-list2-con .event-vertical-list-new.huodong li .zb span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 16px;
+    line-height: 16px;
+}
+.view-list2-con .event-vertical-list-new.huodong li .zb a {
+    display: block;
+    width: 100%;
+    height: 32px;
+    line-height: 16px;
 }
 
 
@@ -1346,6 +1362,9 @@ body {
     width: 100%;
     padding-top: 40px;
     overflow: hidden;
+}
+.detail-descript .xn-ds:first-child {
+    padding-top: 0;
 }
 .detail-descript ol {
     width: 100%;
@@ -1678,4 +1697,64 @@ body {
 .zcxxk .table tr > td:last-child,
 .zcxxk .table tr > th:last-child {
     text-align: center;
+}
+
+
+/* 感兴趣的 */
+.ganxingqu {
+    border: 1px solid rgba(221, 221, 221, .5);
+    margin-bottom: 20px;
+}
+.ganxingqu .title {
+    position: relative;
+    height: 30px;
+    background: #fafafa;
+    border-bottom: 1px solid rgba(221, 221, 221, .5);
+}
+
+.ganxingqu .title span {
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #999;
+    font-size: 12px;
+}
+.ganxingqu ul {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.ganxingqu li {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed rgba(221, 221, 221, .3);
+}
+.ganxingqu li .imgbox {
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+.ganxingqu li .imgbox img {
+    width: 100%;
+    vertical-align: top;
+}
+.ganxingqu li .detail {
+    margin-left: 74px;
+    height: 80px;
+    font-size: 12px;
+}
+.ganxingqu li .detail .name {
+    height: 40px;
+    padding-top: 2px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.ganxingqu li .privce {
+    line-height: 16px;
+    height: 16px;
+}
+.ganxingqu li .detail .name a {
+    color: #4a4a4a;
 }
