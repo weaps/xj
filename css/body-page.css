@@ -820,7 +820,17 @@ body {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    background: #eee;
     overflow: hidden;
+}
+.zhuanjia-box .personalInfo .avatar:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "头像";
+    line-height: 64px;
+    text-align: center;
+    color: rgba(0, 0, 0, .06);
 }
 .zhuanjia-box .personalInfo .text .name {
     line-height: 30px;
