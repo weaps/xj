@@ -96,4 +96,5 @@
 		delayTime: 1500
 	});
 
+
 })(jQuery)
