@@ -248,6 +248,18 @@ body {
     overflow: hidden;
     font-weight: 100;
 }
+.article-wrap .tag {
+    margin: 20px 0;
+    line-height: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(221, 221, 221, .5);
+    font-size: 12px;
+    text-align: right;
+}
+.article-wrap .tag em {
+    font-style: normal;
+    padding-left: 20px;
+}
 
 .article-content,
 .thumbs {
