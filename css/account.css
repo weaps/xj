@@ -666,6 +666,13 @@ body {
     background-color: #fff;
     margin-top: 20px
 }
+.accountOderInfo .col-lg-3:first-child .mod-main {
+    background: url(../images/account-total-bg1.png);
+    background-size: 100%;
+}
+.mod-main:first-child {
+    
+}
 
 .mod-main .mt {
     display: inline-block;
