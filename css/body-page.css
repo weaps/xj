@@ -990,10 +990,9 @@ body {
     background: #fff;
 }
 .jiathis_style_32x32 {
-    float: right;
     height: 32px;
     margin-top: 23px;
-    text-align: right;
+    padding-left: 30px;
     overflow: hidden;
 }
 .jiathis_style_32x32 .jiathis_counter.jiathis_bubble_style {
@@ -1344,6 +1343,8 @@ body {
     width: 370px;
     height: 300px;
     background: #eee;
+    border: 1px solid #ddd;
+    overflow: hidden;
 }
 .poi-detail .seller-view .no-img {
     line-height: 280px;
@@ -1365,7 +1366,8 @@ body {
     line-height: 80px;
     text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(255, 255, 255, .8);
+    box-sizing: border-box;
 }
 .poi-detail .seller-info-head .seller-name {
     font-size: 26px;
@@ -1666,11 +1668,11 @@ body {
 
 .paimai .table td,
 .paimai .table th{
-    padding: 0.8rem 0.3125rem;
+    padding: 1.4rem 0.3125rem;
     text-align: left;
 }
 .paimai .table td > a {
-    color: #333;
+    color: #4FB0FF;
 }
 .sub-list-container.paimai .poi-detail .seller-info-body {
     border-bottom: 0;
@@ -1783,7 +1785,7 @@ body {
     color: #fff;
 }
 .zcxxk .table {
-    font-size: 16px;
+    font-size: 18px;
 }
 .zcxxk .table tr > td,
 .zcxxk .table tr > th {
