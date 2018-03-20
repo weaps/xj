@@ -1714,7 +1714,6 @@ body {
 .zcxxk-banner .linear {
     height: 300px;
     padding-top: 40px;
-    /* background: #7b4397; */
     background: -webkit-linear-gradient(to bottom, transparent, #fff);
     background: linear-gradient(to bottom, transparent, #fff);
 

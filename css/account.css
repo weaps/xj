@@ -660,19 +660,58 @@ body {
 }
 
 /*个人中心订单*/
-
+.accountOderInfo {
+    width: 100%;
+    margin: 20px 0;
+}
 .mod-main {
-    padding: 10px;
+    padding: 25px 15px;
     background-color: #fff;
-    margin-top: 20px
+    /* color:#fff; */
 }
-.accountOderInfo .col-lg-3:first-child .mod-main {
-    background: url(../images/account-total-bg1.png);
-    background-size: 100%;
+.accountOderInfo .row {
+    margin-left: -10px;
+    margin-right: -10px;
 }
-.mod-main:first-child {
-    
+.accountOderInfo .row > div {
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.accountOderInfo .fa {
+    display: inline-block;
+    font-size: 25px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5 sall;
+    transition: 0.5s all;
+}
+.icon-rounded {
+    color: #ffffff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    -ms-border-radius: 50px;
+    font-size: 25px;
+}
+.icon-rounded.bg1 {
+    background-color: #7460ee;
+}
+.icon-rounded.bg2 {
+    background-color: #fc4b6c;
+}
+.icon-rounded.bg3 {
+    background-color: #1e88e5;
+}
+.icon-rounded.bg4 {
+    background-color: #ffb22b;
+}
+
 
 .mod-main .mt {
     display: inline-block;
@@ -817,8 +856,7 @@ body {
     display: inline-block;
     cursor: pointer;
 }
-.order-title-item .list-item.active {
-    font-weight: 600;
+.order-title-item .list-item.active a {
     color: #cf3529;
 }
 .order-title-item .list-item.active:after {
@@ -830,30 +868,35 @@ body {
     border-bottom: 2px solid #cf3529;
 }
 
-.order-title-item .active a {
-    color: #84c225;
+.order-title-item .list-item a {
+    color: #333;
 }
 
 .trade-nav-text {
-    font-weight: 700;
-    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .tp-tag-em {
-    color: #ff6000;
+    color: #cf3529;
     font-style: normal;
     font-weight: 400;
     margin-left: 5px;
 }
 
-.accountOderInfo {
-    width: 100%;
+.accountOderInfo .con {
+    /* float: left; */
+    display: inline-block;
+    height: 56px;
+    padding: 5px 0 0 10px;
 }
-.accountOderInfo .num {
-    margin-top: 10px;
+.accountOderInfo .con p {
+    font-size: 12px;
+    color: #999;
 }
+
 .accountOderInfo .icon {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 /*order list*/
@@ -1459,4 +1502,20 @@ body {
 }
 .certify-con .steps .disabled.step:last-child:after {
     display: none;
+}
+
+/* 订单列表 */
+.mod-main {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.mod-order .mt {
+    padding: 5px;
+}
+.mod-order .mt h3 {
+    font-size: 12px;
+    color: #666;
+    font-family: '\5b8b\4f53';
+    line-height: 18px;
 }
