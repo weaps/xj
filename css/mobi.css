@@ -795,7 +795,8 @@ a.text-primary {
     margin-right: 10px;
 }
 .infomation .usuallyText.arrow {
-    width: 84px;
+    position: relative;
+    /* width: 84px; */
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     box-sizing: border-box;
@@ -822,7 +823,12 @@ a.text-primary {
     padding-right: 0;
 }
 .infomation .usuallyText.arrow em {
+    /* position: absolute; */
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
     font-style: normal;
+    vertical-align: top;
 }
 .infomation span:hover.usuallyText.arrow {
     background-color: #fff;

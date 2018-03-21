@@ -838,21 +838,32 @@ body {
 
 .order-title {
     width: 100%;
+    padding: 10px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .order-title-item {
     width: 100%;
     font-size: 16px;
-    border-bottom: 2px solid #E8E8E8;
     height: 44px;
+}
+.search .itxt {
+    height: 22px;
+    width: 200px;
+}
+.search-btn {
+    display: inline-block;
+    background: #cf3529;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 10px;
 }
 
 .order-title-item .list-item {
     position: relative;
-    line-height: 44px;
-    padding: 0 20px;
-    position: relative;
+    line-height: 24px;
+    margin-right: 20px;
     display: inline-block;
     cursor: pointer;
 }
@@ -878,10 +889,20 @@ body {
 }
 
 .tp-tag-em {
-    color: #cf3529;
+    display: inline-block;
+    color: #fff;
     font-style: normal;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 100;
     margin-left: 5px;
+    /* width: 14px; */
+    padding: 0 4px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    background: #cf3529;
+    vertical-align: top;
+    border-radius: 20px;
 }
 
 .accountOderInfo .con {
@@ -1018,7 +1039,7 @@ body {
 .order-tb .tooltip {
     position: relative;
     width: 100px;
-    margin: 0 auto;
+    padding-top: 10px;
     z-index: 2;
     text-align: center;
 }
@@ -1518,4 +1539,160 @@ body {
     color: #666;
     font-family: '\5b8b\4f53';
     line-height: 18px;
+}
+.top-search {
+    position: relative;
+    padding: 20px 0 10px;
+    margin: 5px 0 0;
+    border-top: 1px solid #f5f5f5;
+    z-index: 2;
+}
+.top-search .dl {
+    display: inline-block;
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 60px;
+}
+.top-search .dl dt {
+    position: absolute;
+    left: 0;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+.top-search .dl dd {
+    display: block;
+    width: 100%;
+}
+.top-search .dl dd a {
+    display: inline-block;
+    line-height: 20px;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #666;
+    text-decoration: none;
+}
+.top-search .dl dd a.active {
+    background: #cf3529;
+    color: #fff;
+}
+.order-tb thead th {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #666;
+    font-weight: 600;
+}
+.order-tb .tr-th {
+    background: #f5f5f5;
+    height: 31px;
+    line-height: 31px;
+    color: #aaa;
+    overflow: hidden;
+}
+
+.order-tb .tr-bd {
+    text-align: center;
+    vertical-align: top;
+}
+.order-tb td {
+    background: #fff;
+}
+.order-tb .tr-bd td {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.order-tb .tr-bd td {
+    padding: 14px 0;
+}
+.goods-item {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.order-tb-td-t-bor {
+    border-bottom: 1px solid #e5e5e5;
+}
+.order-tb .goods-item .p-img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #efefef;
+    margin: 0 14px;
+    _display: inline;
+}
+.order-tb .goods-item .p-msg {
+    position: relative;
+    float: left;
+    width: 300px;
+    padding-right: 120px;
+    height: 60px;
+}
+
+.order-tb .goods-item .p-msg .pz {
+    display: block;
+    margin-top: 2px;
+    width: 100%;
+    overflow: hidden;
+    height: 20px;
+    text-align: left;
+}
+
+.order-tb .goods-item .p-msg .pz em {
+    display: block;
+    float: left;
+    background: url(../images/order-icon20150213.png)no-repeat;
+    background: url(../images/order-icon20150213.png) no-repeat\9;
+    margin-right: 10px;
+}
+
+.order-tb .goods-item .p-msg .pz .yjc {
+    width: 52px;
+    height: 16px;
+    background-position: 0 0;
+}
+
+.order-tb .goods-item .p-msg .pz .z {
+    width: 16px;
+    height: 16px;
+    background-position: 0 -28px;
+}
+
+.order-tb .goods-item .p-msg .pz .wny {
+    width: 16px;
+    height: 16px;
+    background-position: -18px -28px;
+}
+
+.order-tb .goods-item .p-name {
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    color: #333;
+    text-align: left
+}
+
+.order-tb .goods-item .p-msg .number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    text-align: center;
+    color: #bbb;
+}
+
+.order-tb .goods-item .p-msg .price {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    width: 50px;
+    text-align: left;
+    font-weight: 700;
+}
+.order-tb-td-l-bor {
+    border-left: 1px solid #e5e5e5;
 }
