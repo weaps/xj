@@ -1169,14 +1169,16 @@ a.text-primary {
     color: #ddd;
 }
 
-.no-date-box {
+.no-data-box {
     width: 100%;
     height: 400px;
     padding: 100px 0;
     text-align: center;
     color: #ddd;
-    /* background: url(../images/no-data-img.svg) no-repeat center; */
 }
-.no-date-box img {
+.no-data img {
     width: 150px;
+}
+.data-404 img {
+    width: 300px;
 }
