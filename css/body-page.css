@@ -1518,11 +1518,11 @@ body {
 
 .zhuanjia-container .zhuanjieTab {
     height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .zhuanjia-container .zhuanjieTab ul {
     display: block;
-    width: 60%;
+    width: 400px;
     height: 40px;
     margin: 0 auto;
 }
@@ -1536,6 +1536,7 @@ body {
     text-align: center;
     font-size: 18px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .zhuanjia-container .zhuanjieTab li.active {
     background: #cf3529;
@@ -1864,4 +1865,16 @@ body {
 }
 .ganxingqu li .detail .name a {
     color: #4a4a4a;
+}
+.zhuanjia-box.sub-zhuanjia-box {
+    border: 0;
+}
+.zhuanjia-box.sub-zhuanjia-box li {
+    width: 360px;
+    margin: 0 15px 30px 15px;
+    border: 1px solid rgba(221, 221, 221, .5);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
+}
+.zhuanjia-box.sub-zhuanjia-box li:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
 }

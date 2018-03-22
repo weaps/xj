@@ -33,12 +33,13 @@
 
 <div class="register-container">
 	<div class="register-wrap">
-		<h6>
-			《国家技术转移东部中心-新疆分中心》平台通行证是本平台推出的统一账号管理系统，
-			注册本平台通行证的用户可以使用同一通行证账号及密码登录本平台及其他关联互联网平台。
-
-		</h6>
-		
+		<div class="register-tab">
+            <ul>
+                <li class="select"><button class="btn">创建新的帐号，请完善资料</button></li>
+                <li><button class="btn">已拥有本站帐号，请绑定</button></li>
+            </ul>
+		</div>
+		<div class="register-tab-con">
 		<form action="" class="register-form">
 			<div class="radio">
 				<label>
@@ -51,15 +52,20 @@
 					<input type="radio"> 高校用户
 				</label>
 			</div>
+			<div class="wellcome-tip">
+				<img src="../images/avatar.jpg" alt="">
+				<p> Hi, <span class="text-danger">情以何堪</span> 欢迎来新疆分中心，完成绑定或者注册可以微信账号 一键登录哦~
+				</p>
+			</div>
 			<dl>
-				<dt>手机号码</dt>
+				<dt>手机号码：</dt>
 				<dd>
 					<input type="text" class="register-input" placeholder="请输入11位手机号码">
 					<i class="icon iconfont icon-msnui-tel"></i>
 				</dd>
 			</dl>
 			<dl>
-				<dt>手机验证码</dt>
+				<dt>验证码：</dt>
 				<dd>
 					<input type="text" class="register-input vcode" placeholder="请输入验证码">
 					<i class="icon iconfont icon-ecurityCode"></i>
@@ -69,27 +75,17 @@
 				</dd>
 			</dl>
 			<dl>
-				<dt>登录密码</dt>
+				<dt>登录密码：</dt>
 				<dd>
 					<input type="password" class="register-input" placeholder="设置您的登录密码">
 					<i class="icon iconfont icon-mima"></i>
 				</dd>
 			</dl>
 			<dl>
-				<dt>确认密码</dt>
+				<dt>确认密码：</dt>
 				<dd>
 					<input type="password" class="register-input" placeholder="请再次输入密码">
 					<i class="icon iconfont icon-mima"></i>
-				</dd>
-			</dl>
-			<dl>
-				<dt>图形验证码</dt>
-				<dd>
-					<input type="text" class="register-input vcode" placeholder="请输入验证码">
-					<i class="icon iconfont icon-ecurityCode"></i>
-					<span class="manage-box">
-						<img src="../images/yzm.jpeg">
-					</span>
 				</dd>
 			</dl>
 			
@@ -102,7 +98,52 @@
 			<div class="register-botton">
 				<button class="btn btn-danger btn-block btn-lg" type="button">立即注册</button>
 			</div>
-		</form>
+        </form>
+        <form action="" class="register-form" style="display:none;">
+            <div class="radio">
+                <label>
+                    <input type="radio" checked> 个人用户
+                </label>
+                <label>
+                    <input type="radio"> 企业用户
+                </label>
+                <label>
+                    <input type="radio"> 高校用户
+                </label>
+            </div>
+            <div class="wellcome-tip">
+                <img src="../images/avatar.jpg" alt="">
+                <p> Hi,
+                    <span class="text-danger">情以何堪</span> 欢迎来新疆分中心，完成绑定或者注册可以微信账号 一键登录哦~
+                </p>
+            </div>
+            <dl>
+                <dt>手机号码：</dt>
+                <dd>
+                    <input type="text" class="register-input" placeholder="请输入11位手机号码">
+                    <i class="icon iconfont icon-msnui-tel"></i>
+                </dd>
+            </dl>
+            
+            <dl>
+                <dt>登录密码：</dt>
+                <dd>
+                    <input type="password" class="register-input" placeholder="设置您的登录密码">
+                    <i class="icon iconfont icon-mima"></i>
+                </dd>
+            </dl>
+        
+            <div class="form-agreen">
+                <label for="checkbox">
+                    <input type="checkbox" class="jdradio">我已阅读并同意
+                    <a href="#">《网站服务协议》</a>
+                </label>
+            </div>
+            <div class="register-botton">
+                <button class="btn btn-danger btn-block btn-lg" type="button">立即注册</button>
+            </div>
+        </form>
+        </div>
 	</div>
 </div>
 	
@@ -148,5 +189,17 @@
 	</div>
 </div>
 <!-- footer end -->
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // index tab
+        var $tabContainer = $('.register-tab ul li');
+        $tabContainer.click(function () {
+            $(this).addClass('select').siblings().removeClass('select');
+            var index = $tabContainer.index(this);
+            $('.register-tab-con > .register-form').eq(index).show().siblings().hide();
+        });
+    })
+</script>
 </body>
 </html>

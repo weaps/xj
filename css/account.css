@@ -104,7 +104,7 @@ body {
     top: 50px;
     right: 0;
     width: 346px;
-    height: 400px;
+    height: 370px;
     background: white;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.95);
@@ -155,7 +155,6 @@ body {
 
 .reg-form {
     width: 280px;
-    height: 280px;
     margin: auto;
 }
 
@@ -224,7 +223,6 @@ body {
 }
 
 .reg-form .text,
-.register-form .register-input,
 .form .input-box {
     line-height: 24px;
     font-size: 14px;
@@ -241,11 +239,16 @@ body {
 }
 
 .reg-form .text:focus,
-.register-form .register-input:focus,
+/* .register-form .register-input:focus, */
 .form .input-box {
     outline: none;
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
     border-color: #bbb;
+}
+.register-form .register-input:focus {
+    box-shadow: none;
+    outline: none;
+    border: 0;
 }
 
 .reg-form .text {
@@ -263,9 +266,80 @@ body {
     padding-bottom: 0.55rem;
 }
 
-.login-bottom .btn_sign_in {
+.reg-login-test {
     width: 100%;
-    margin: 0;
+    padding: 10px 33px 0 33px;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(221, 221, 221, .5);
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.reg-login-test .pull-right {
+    line-height: 25px;
+}
+.reg-login-test a.weixin {
+    position: relative;
+    display: inline-block;
+    padding-left: 22px;
+    height: 25px;
+    color: #666;
+}
+.reg-login-test a.weixin b {
+    width: 19px;
+    height: 18px;
+    display: block;
+    background: url(../images/qq-weixin.png) no-repeat -20px 0;
+    margin: 0 auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 2px;
+}
+.wellcome-tip {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 12px;
+    background: #f6f6f6;
+    padding: 8px 15px;
+    vertical-align: middle;
+}
+.wellcome-tip img {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 10px;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+.wellcome-tip p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 320px;
+}
+.form-agreen {
+    color: #333;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+.register-tab {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.register-tab li {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+}
+.register-tab li.select .btn{
+    background-color: #CF3529;
+    border-color: #CF3529;
+    color: #fff;
 }
 
 
@@ -299,6 +373,7 @@ body {
 .register-form input:-webkit-input-placeholder,
 .form input:-webkit-input-placeholder {
     color: #999;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -306,6 +381,7 @@ body {
 .register-form input:-ms-input-placeholder,
 .form input:-ms-input-placeholder {
     color: #999;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -313,6 +389,7 @@ body {
 .register-form input:-moz-input-placeholder,
 .form input:-moz-input-placeholder {
     color: #999;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -328,10 +405,11 @@ body {
     width: 680px;
     margin: 0 auto;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 .register-form {
     display: block;
-    width: 580px;
+    width: 480px;
     padding: 30px;
     margin: 0 auto;
     overflow: hidden;
@@ -361,26 +439,49 @@ body {
 .register-form dl {
     display: block;
     width: 100%;
-    height: 40px;
     margin-bottom: 30px;
+    border: 1px solid;
+    border-color: #CECECF;
+    border-radius: 0;
+    /* padding: 7px 10px 7px 35px; */
+    background: white;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+    -webkit-appearance: none;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .register-form dt {
     float: left;
-    width: 140px;
+    width: 80px;
     height: 40px;
     line-height: 40px;
-    padding: 0 20px;
-    text-align: right;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
 }
 .register-form dd {
     position: relative;
     float: right;
-    width: 380px;
+    width: 320px;
     height: 40px;
     box-sizing: border-box;
 }
 .register-form dd input.register-input {
     width: 100%;
+}
+.register-form .register-input,
+.form .input-box {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    font-weight: 100;
+    padding: 7px 10px 7px 35px;
+    border: 0;
+    background: white;
+    -webkit-appearance: none;
+    box-sizing: border-box;
 }
 .register-form dd i.icon {
     position: absolute;
@@ -397,15 +498,15 @@ body {
     width: 200px;
 }
 .register-form .manage-box {
-    float: right;
-    width: 175px;
-    height: 40px;
-    padding-left: 10px;
+    position: absolute;
+    right: 6px;
+    top: 6px;
     box-sizing: border-box;
 }
 .register-form .manage-box .btn {
-    padding: .66rem 2rem;
-    border-radius: 4px;
+    padding: .26rem 1rem;
+    border-radius: 2px;
+    font-size: 12px;
 }
 .register-form .yzm-img img {
     vertical-align: middle;
@@ -482,7 +583,8 @@ body {
 }
 
 .side-nav__list a:hover {
-    color: #84c225;
+    color: #cf3529;
+    text-decoration: none;
 }
 
 .side-nav__list .header-item a {
