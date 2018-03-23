@@ -1711,12 +1711,17 @@ body {
     height: 300px;
     background: url(../images/zcxxk-banner.jpg) center 0 no-repeat #fff;
 }
+.user-banner {
+    background: url(../images/zcxxk-banner.jpg) center 0 no-repeat #fff;
+}
 .zcxxk-banner .linear {
     height: 300px;
+}
+.zcxxk-banner .linear,
+.user-banner .linear {
     padding-top: 40px;
     background: -webkit-linear-gradient(to bottom, transparent, #fff);
     background: linear-gradient(to bottom, transparent, #fff);
-
 }
 .zcxxk-form {
     position: relative;
@@ -1796,7 +1801,126 @@ body {
 .zcxxk .table tr > th:last-child {
     text-align: center;
 }
-
+.user-banner .linear {
+    /* border-bottom: 1px solid rgba(221, 221, 221, .5); */
+    margin-bottom: 50px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+}
+.user-banner .er {
+    padding-top: 50px;
+}
+.erma {
+    width: 200px;
+}
+.user-banner .user-info {
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.user-banner .avatar {
+    display: inline-block;
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid rgba(181, 181, 181, .2);
+}
+.user-base {
+    display: inline-block;
+    padding: 10px 0 0 40px;
+    vertical-align: top;
+}
+.user-banner .name {
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fb7600;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.user-banner .user-info p {
+    height: 30px;
+    padding: 5px 0;
+    /* line-height: 20px; */
+    /* font-size: 14px; */
+}
+.user-banner .user-info span {
+    display: inline-block;
+    /* padding: 0 10px; */
+    color: #666;
+    margin-right: 20px;
+}
+.user-banner .user-info .ji {
+    position: relative;
+    padding-left: 25px;
+}
+.user-banner .user-info .ji em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/sprites.png) no-repeat;
+}
+.user-banner .user-info .ji em.one {
+    background-position: 0px 5px;
+}
+.user-banner .user-info .ji em.two {
+    background-position: 0px -230px;
+}
+.user-banner .user-info .ji em.three {
+    background-position: 0px -1252px;
+}
+.userinfo-btn {
+    padding-top: 20px;
+}
+.userinfo-btn button.btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.userinfo-box {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: #f1f2f6;
+}
+.userinfo-box:last-child {
+    margin-bottom: 100px;
+}
+.userinfo-box .title {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    color: #fc5f00;
+}
+.userinfo-box .title em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../images/sprites.png) no-repeat;
+}
+.userinfo-box .title em.topic {
+    background-position: 0px -2153px;
+}
+.userinfo-box .title em.territory {
+    background-position: 0px -2230px;
+}
+.userinfo-box .title em.achieve {
+    background-position: 0px -2079px;
+}
+.userinfo-box p {
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 35px;
+    text-indent: 2rem;
+    margin-bottom: 10px;
+}
 
 /* 感兴趣的 */
 .ganxingqu {
