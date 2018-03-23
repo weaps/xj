@@ -1522,9 +1522,8 @@ body {
 }
 .zhuanjia-container .zhuanjieTab ul {
     display: block;
-    width: 400px;
+    width: 100%;
     height: 40px;
-    margin: 0 auto;
 }
 .zhuanjia-container .zhuanjieTab li {
     float: left;
@@ -1877,4 +1876,71 @@ body {
 }
 .zhuanjia-box.sub-zhuanjia-box li:hover {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+}
+.sub-search {
+    width: 100%;
+    padding-top: 5px;
+    height: 60px;
+}
+.sub-search form {
+    float: right;
+    padding-right: 15px;
+    position: relative;
+}
+.sub-search form input{
+    width: 260px;
+    border: 1px solid;
+    border-color: #CECECF;
+    border-radius: 2px;
+    padding: 8px 10px;
+    background: white;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+
+}
+.sub-search form input:focus {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+.sub-search form button {
+    position: absolute;
+    right: 18px;
+    top: 1px;
+    border: 0;
+    padding: 4px 10px;
+    background: transparent;
+    color: #999;
+}
+.sub-search form button:hover {
+    background: transparent;
+    color: #666;
+}
+.usuallyText a.weixin-login {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px 0 30px;
+    line-height: 20px;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    background: #2dbe60;
+    background: -moz-linear-gradient(top, #2dbe60 0%, #31ce49 50%, #2ec14e 51%, #2dbe60 100%);
+    background: -webkit-linear-gradient(top, #2dbe60 0%, #31ce49 50%, #2ec14e 51%, #2dbe60 100%);
+    background: linear-gradient(to bottom, #2dbe60 0%, #31ce49 50%, #2ec14e 51%, #2dbe60 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dbe60', endColorstr='#2dbe60', GradientType=0);
+}
+.usuallyText a.weixin-login i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    color: #2DBE60;
+    border: 1px solid rgba(221, 221, 221, .5);
+    border-radius: 2px 0 0 2px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
 }
