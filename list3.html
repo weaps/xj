@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表1</title>
+    <link rel="stylesheet" href="./css/mobi.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/body-page.css">
+</head>
+<body>
+<!-- topnav -->
+<div class="topNav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 language">
+                <a href="#" class="active">国语</a>/
+                <a href="#">ENG</a>/
+                <a href="#">русский</a>/
+                <a href="#">ئۇيغۇرچە</a>
+            </div>
+            <div class="col-lg-7">
+                <div class="infomation pull-right">
+                    <span class="usuallyText">你好，
+                        <a href="./account/login.html">请登录</a>
+                    </span>
+                    <span class="registerText usuallyText">
+                        <a href="./account/register.html">免费注册</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">我的订单</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">会员权益</a>
+                    </span>
+                    <span class="usuallyText arrow">
+                        <em>收藏夹</em>
+                        <i class="icon iconfont icon-arrowdown-copy"></i>
+                        <div class="con arrowMenu">
+                            <ul>
+                                <li>
+                                    <a href="#">收藏的项目</a>
+                                </li>
+                                <li>
+                                    <a href="#">收藏的专家</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">联系我们</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">帮助中心</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--topnav end  -->
+
+<!-- header -->
+<div class="header">
+    <div class="container">
+        <div class="headinfo">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="index.html"><img src="./images/index-logo.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- search -->
+                    <div class="search">
+                        <form name="searchform" class="flex-cont flex-box">
+                            <input name='ecmsfrom' type='hidden' value='9'>
+                            <input type="hidden" name="show" value="title,newstext">
+                            <select name="classid" id="choose">
+                                <option value="0">搜索全部</option>
+                                <option value="1">新闻中心</option>
+                                <option value="4">技术文档</option>
+                            </select>
+                            <div class="input">
+                                <input class="inp_srh" placeholder="请输入搜索内容">
+                            </div>
+
+                            <button type="button" class="search-btn">搜 索</button>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- 一带一路 -->
+                <div class="col-lg-2">
+                    <div class="belt-road">
+                        <img src="images/belt-road.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- 二维码 -->
+                <div class="col-lg-1">
+                    <img src="images/er.jpg" alt="" width="68">
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="zi">
+                <img src="images/zi.png" alt="" height="20">
+            </div>
+            <ul class="pull-left">
+                <li>
+                    <a href="index.html" class="active">首页</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">产业研究</a>
+                </li>
+                <li>
+                    <a href="#">合同登记</a>
+                </li>
+                <li>
+                    <a href="#">活动报名</a>
+                </li>
+                <li>
+                    <a href="#">在线展会</a>
+                </li>
+                <li>
+                    <a href="#">子站频道</a>
+                </li>
+            </ul>
+            <button type="button" class="nav-btn btn-danger pull-left">
+                <i class="icon iconfont icon-jiaoyi"></i>
+                <span>交易大厅</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+<div class="sub-containerBox">
+    <div class="container">
+        <div class="sub-list-container">
+            <!-- 帅选 -->
+            <div class="view-category-list">
+                <!-- 机构 -->
+                <div class="list-item">
+                    <div class="title">机构：</div>
+                    <ul id="filterByDate">                
+                        <li class="active">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">高校</a>
+                        </li>
+                        <li>
+                            <a href="#">企业</a>
+                        </li>
+                        <li>
+                            <a href="#">经济机构</a>
+                        </li>
+                        <li>
+                            <a href="#">服务机构</a>
+                        </li>                       
+                        <li>
+                            <a href="#">其它</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 行业 -->
+                <div class="list-item">
+                    <div class="title">行业：</div>
+                    <ul id="filterByDate">
+                        <li class="active">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">食品饮料</a>
+                        </li>
+                        <li>
+                            <a href="#">建筑建材</a>
+                        </li>
+                        <li>
+                            <a href="#">家居用品</a>
+                        </li>
+                        <li>
+                            <a href="#">轻工纺织</a>
+                        </li>
+                        <li>
+                            <a href="#">化学化工</a>
+                        </li>
+                        <li>
+                            <a href="#">新能源</a>
+                        </li>
+                        <li>
+                            <a href="#">机械</a>
+                        </li>
+                        <li>
+                            <a href="#">环保</a>
+                        </li>
+                        <li>
+                            <a href="#">安全</a>
+                        </li>
+                        <li>
+                            <a href="#">交通运输</a>
+                        </li>
+                        <li>
+                            <a href="#">橡胶塑料</a>
+                        </li>
+                        <li>
+                            <a href="#">仪器仪表</a>
+                        </li>
+                        <li>
+                            <a href="#">新材料</a>
+                        </li>
+                        <li>
+                            <a href="#">电子</a>
+                        </li>
+                        <li>
+                            <a href="#">医药医疗</a>
+                        </li>
+                        <li>
+                            <a href="#">农林牧业</a>
+                        </li>
+                        <li>
+                            <a href="#">海洋开发</a>
+                        </li>
+                        <li>
+                            <a href="#">航空航天</a>
+                        </li>
+                        <li>
+                            <a href="#">采矿冶金</a>
+                        </li>
+                        <li>
+                            <a href="#">教育</a>
+                        </li>
+                        <li>
+                            <a href="#">其它</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 需求 -->
+                <div class="list-item">
+                    <div class="title">需求：</div>
+                    <ul id="filterByDate">
+                        <li class="active">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">专利</a>
+                        </li>
+                        <li>
+                            <a href="#">技术转让</a>
+                        </li>
+                        <li>
+                            <a href="#">合作开发</a>
+                        </li>
+                        <li>
+                            <a href="#">发明专利</a>
+                        </li>
+
+                        <li>
+                            <a href="#">实用新型专利</a>
+                        </li>
+                        <li>
+                            <a href="#">外观专利</a>
+                        </li>
+                        <li>
+                            <a href="#">软件著作权</a>
+                        </li>
+                        <li>
+                            <a href="#">其它</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 合作方式 -->
+                <div class="list-item">
+                    <div class="title">合作：</div>
+                    <ul id="filterByDate">
+                        <li class="active">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">完全转让</a>
+                        </li>
+                        <li>
+                            <a href="#">许可转让</a>
+                        </li>
+                        <li>
+                            <a href="#">技术入股</a>
+                        </li>
+                        <li>
+                            <a href="#">5年独占许可</a>
+                        </li>
+                        <li>
+                            <a href="#">其它</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 预算 -->
+                <div class="list-item">
+                    <div class="title">预算：</div>
+                    <ul id="filterByDate">
+                        <li class="active">
+                            <a href="#">全部</a>
+                        </li>
+                        <li>
+                            <a href="#">1~10万</a>
+                        </li>
+                        <li>
+                            <a href="#">10~50万</a>
+                        </li>
+                        <li>
+                            <a href="#">50~100万</a>
+                        </li>
+                        <li>
+                            <a href="#">100~500万</a>
+                        </li>
+                        <li>
+                            <a href="#">500万以上</a>
+                        </li>
+                        <li>
+                            <a href="#">其它</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- 帅选end -->
+
+            <div class="view-list-con">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul class="event-horizontal-list-new zhuanli-list">
+                            <li>
+                                <a href="#" class="imgbox">
+                                    <img src="./img/p1.jpg" alt="">
+                                </a>
+                                <h2>
+                                    <a target="_blank" href="./list-container.html">No.42‖周六7.29樊登读书会【零基础油画体验 给夏天加点色彩】</a>
+                                </h2>
+                                <div class="event-info">
+                                    <p class="p-list">
+                                        <span class="s-td-12">
+                                            专利（申请号）：201710186996.7
+                                        </span>
+                                    </p>
+                                    <p class="p-list">
+                                        <span class="s-td-6">行业：医药与医疗-医药器械</span>
+                                        <span class="s-td-6">专利类型：发明专利</span>
+                                    </p>
+                                    <p class="p-list">
+                                        <span class="s-td-6">
+                                            价格：<strong class="text-danger">360000</strong>元
+                                        </span>
+                                        <span class="s-td-6">
+                                            <a href="#" class="s-btn">了解更多细节</a>
+                                        </span>
+                                    </p>
+                                </div>                               
+                            </li>
+                            <li>
+                                <a href="#" class="imgbox">
+                                    <img src="./img/p2.jpg" alt="">
+                                </a>
+                                <h2>
+                                    <a target="_blank" href="./list-container.html">一种罗布麻茶及其制备方法</a>
+                                </h2>
+                                <div class="event-info">
+                                    <p class="p-list">
+                                        <span class="s-td-12">
+                                            专利（申请号）：201710186996.7
+                                        </span>
+                                    </p>
+                                    <p class="p-list">
+                                        <span class="s-td-6">行业：医药与医疗-医药器械</span>
+                                        <span class="s-td-6">专利类型：发明专利</span>
+                                    </p>
+                                    <p class="p-list">
+                                        <span class="s-td-6">
+                                            价格：
+                                            <strong class="text-danger">360000</strong>元
+                                        </span>
+                                        <span class="s-td-6">
+                                            <a href="#" class="s-btn">了解更多细节</a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="page">
+                            <a class="prev" href="#">上一页</a>
+                            <a class="num active" href="#">1</a>
+                            <a class="num" href="#">2</a>
+                            <a class="num" href="#">3</a>
+                            <a class="next" href="#">下一页</a>
+                            <a class="all" href="#">在本页浏览全文</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="ad-box">
+                            <img src="./img/ad1.jpg" alt="">
+                        </div>
+                        <div class="ad-box">
+                            <img src="./img/ad2.jpg" alt="">
+                        </div>
+                        <div class="all-news-img">
+                            <div class="title">技术难题</div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="imgleft"></a>
+                                    <div class="righttext">
+                                        <p class="name">
+                                            <a href="#" class="ui-whitespace ui-nowrap-multi">一种七彩神仙鱼饲料及其加工方法</a>
+                                        </p>
+                                        <span class="tag">
+                                            2小时前
+                                        </span>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <a href="#" class="imgleft"></a>
+                                    <div class="righttext">
+                                        <p class="name">
+                                            <a href="#">铝熔体在线除气装置</a>
+                                        </p>
+                                        <span class="tag">
+                                            2小时前
+                                        </span>
+                                    </div>
+                                
+                                </li>
+                                <li>
+                                    <a href="#" class="imgleft"></a>
+                                    <div class="righttext">
+                                        <p class="name">
+                                            <a href="#">一种缢蛏家系的建立和良种选育方法</a>
+                                        </p>
+                                        <span class="tag">
+                                            2018-02-20
+                                        </span>
+                                    </div>
+                                
+                                </li>
+                                <li>
+                                    <a href="#" class="imgleft"></a>
+                                    <div class="righttext">
+                                        <p class="name">
+                                            <a href="#" class="ui-whitespace ui-nowrap-multi">烟气再循环技术及燃烧器助燃风与循环烟气装置</a>
+                                        </p>
+                                        <span class="tag">
+                                            2018-02-20
+                                        </span>
+                                    </div>
+                                
+                                </li>                           
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="footLink">
+                    <ul class="f-img-con">
+                        <li>
+                            <a href="#">
+                                <img src="./img/f1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/f1.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="hd">
+                        <span class="arrow prev">
+                            <i class="icon iconfont icon-iconfontzhizuobiaozhun023126"></i>
+                        </span>
+                        <span class="arrow next">
+                            <i class="icon iconfont icon-iconfontzhizuobiaozhun023127"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="footText">
+                    <a href="#">关于我们</a>|
+                    <a href="#">联系我们</a>|
+                    <a href="#">知识产权保护</a>|
+                    <a href="#">著作权与商标声明</a>|
+                    <a href="#">法律声明</a>|
+                    <a href="#">服务条款</a>|
+                    <a href="#">隐私政策</a>
+                </div>
+                <div class="copy">
+                    <span>版权所有：国家技术转移东部中心 新疆分中心 新ICP备16001593号</span>
+                    <span class="beian">
+                        <i>
+                            <img src="./images/beianbgs.png" alt="">
+                        </i>新公网安备 65010402000660号</span>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="f-contact line">
+                    <dl>
+                        <dt>电话：</dt>
+                        <dd>0991-3191135</dd>
+                        <dd>0991-3191136</dd>
+                    </dl>
+                    <dl>
+                        <dt>邮箱：</dt>
+                        <dd>xjttc-server@xjttc.org</dd>
+                    </dl>
+                    <dl>
+                        <dt>地址：</dt>
+                        <dd>中国新疆乌鲁木齐市高新北区冬融街567号高新人才大厦</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!-- 产品图切换 -->
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="./js/jquery.select.js"></script>
+</body>
+</html>

@@ -1023,7 +1023,6 @@ body {
     position: relative;
     margin-bottom: 0px;
     padding: 20px 0;
-    /* border-top: 1px solid #dfdede; */
     border-bottom: 1px dashed #dfdede;
     font-size: 12px;
     color: #999;
@@ -1067,20 +1066,11 @@ body {
     display: inline-block;
     position: relative;
     width: 84px;
-    height: 30px;
-    /* padding-left: 35px; */
+    height: 30px;    /* padding-left: 35px; */
     text-decoration: none;
     vertical-align: middle;
     background: url(../images/sprites.png)no-repeat;
 }
-/* .event-info s i {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 30px;
-    width: 30px;
-    background: url(../images/sprites.png)no-repeat;
-} */
 .event-info s.level1 {
     background-position: 0 -522px;
 }
@@ -1197,6 +1187,8 @@ body {
 .event-vertical-list-new {
     width: 100%;
     overflow: hidden;
+}
+.event-vertical-list-new.huodong {
     margin-top: 20px;
 }
 .event-vertical-list-new li {
@@ -1320,7 +1312,53 @@ body {
     line-height: 16px;
 }
 
-
+/* list3 */
+.zhuanli-list li {
+    padding-left: 200px;
+}
+.zhuanli-list li .imgbox {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: -200px;
+}
+.zhuanli-list li .event-info {
+    height: 92px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.zhuanli-list li .event-info .p-list {
+    height: 30px;
+}
+.zhuanli-list li .event-info .p-list .s-td-6 {
+    width: 50%;
+    height: 30px;
+    line-height: 22px;
+    padding: 4px 0;
+    float: left;
+}
+.zhuanli-list li .event-info .p-list .s-td-12 {
+    display: inline-block;
+    width: 100%;
+}
+.zhuanli-list li .event-info .p-list .s-btn {
+    display: inline-block;
+    background: #4FB0FF;
+    border-radius: 20px;
+    line-height: 22px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.zhuanli-list li > h2 {
+    height: 72px;
+    font-size: 24px;
+}
+.zhuanli-list li>h2 > a {
+    color: #4FB0FF;
+    /* text-decoration: none; */
+}
 /* list 内容详情页 */
 
 .poi-detail {
