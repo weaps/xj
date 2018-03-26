@@ -1268,6 +1268,9 @@ body {
     font-weight: normal;
     box-sizing: border-box;
 }
+.formContainer .form .input-box {
+    border: 1px solid #CECECF;
+}
 .formContainer .input-group .radio {
     display: inline-block;
     padding-right: 30px;
