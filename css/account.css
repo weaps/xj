@@ -1228,7 +1228,7 @@ body {
     width: 100%
 }
 
-.pf-avatar-box a.pf-edit-avatar {
+.pf-avatar-box .pf-edit-avatar {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1238,8 +1238,19 @@ body {
     text-align: center;
     color: #e1d7ca;
     font-size: 12px;
+    cursor: pointer;
     background: rgba(0, 0, 0, 0.5);
     display: none;
+}
+.pf-avatar-box .pf-edit-avatar .inputfile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 21px;
+    opacity: 0;
+    border: 0;
+    cursor: pointer;
 }
 
 .pf-avatar-box:hover .pf-edit-avatar {

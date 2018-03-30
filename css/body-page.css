@@ -941,8 +941,9 @@ body {
     background: #fafafa;
     color: #999;
     padding: 0;
-    border: 3px dashed #f2f0db;
+    border: 1px solid rgba(221, 221, 221, .5);
     overflow: hidden;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
 }
 .view-category-list .list-item {
     border-bottom: 1px dashed rgba(221, 221, 221, .8);
@@ -952,6 +953,9 @@ body {
     padding-left: 54px;
     transition: all 0.5s ease;
     overflow: hidden;
+}
+.view-category-list .list-item:hover {
+    background: #eee;
 }
 .view-list2-con .view-category-list .list-item.list-item-1 {
    padding-left: 80px;
@@ -1014,18 +1018,25 @@ body {
 .event-horizontal-list-new {
     display: block;
     width: 100%;
-    padding: 20px;
-    border: 1px solid rgba(221, 221, 221, .5);
-    overflow: hidden;
+    /* padding: 20px; */
+    /* border: 1px solid rgba(221, 221, 221, .5); */
     box-sizing: border-box;
 }
 .event-horizontal-list-new li {
     position: relative;
     margin-bottom: 0px;
-    padding: 20px 0;
-    border-bottom: 1px dashed #dfdede;
+    padding: 20px;
+    border: 1px solid rgba(221, 221, 221, .5);
     font-size: 12px;
     color: #999;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
+}
+.event-horizontal-list-new li:hover {
+    background: #fafafa;
+}
+.event-horizontal-list-new li:nth-of-type(even) {
+    background: #fafafa;
 }
 .event-horizontal-list-new li:last-child {
     border-bottom: 0;
@@ -1193,7 +1204,6 @@ body {
 }
 .event-vertical-list-new li {
     float: left;
-    overflow: hidden;
     margin-bottom: 40px;
 }
 .event-vertical-list-new li {
@@ -1212,6 +1222,10 @@ body {
 }
 .huodong.event-vertical-list-new li .li-con {
     width: 274px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .06);
+}
+.huodong.event-vertical-list-new li:hover .li-con {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .16);
 }
 .list2-con {
     padding-top: 15px;
