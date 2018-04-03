@@ -1412,6 +1412,93 @@
         </div>
     </div>
 </div>
+
+<!-- 右侧悬浮菜单 -->
+<div class="cndns-right">
+    <div class="cndns-right-meau meau-sev">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="icon iconfont icon-fankui"></i>
+            <p>立即<br>咨询</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <i class="icon iconfont icon-fankui"></i>
+                    <p>立即咨询
+                        <i>服务时间：9:00-24:00</i>
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <div class="sev-b">
+                    <h4>您在使用过程中遇到问题，可以告诉我们：</h4>
+                    <textarea class="form-control" placeholder="非常感谢您的反馈，我们将积极改进"></textarea>
+                </div>
+                <div class="btnbox">
+                    <button class="btn">取消</button>
+                    <button class="btn btn-primary">提交</button>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-contact">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="icon iconfont icon-dianhua1"></i>
+            <p>客服<br>热线</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <i class="icon iconfont icon-dianhua1"></i>
+                    <p>400-920-9933
+                        <br>
+                        <i>7*24小时客服服务热线</i>
+                    </p>
+                    <div class="clear"></div>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-code">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="icon iconfont icon-weixin"></i>
+            <p>关注<br>微信</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <img src="../images/er.jpg">
+                    <i>关注官方微信</i>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-code shadowbox">
+        <a href="javascript:" class="cndns-right-btn">
+            <i class="icon iconfont icon-erweima"></i>
+            <p>下载APP</p>
+        </a>
+        <div class="cndns-right-box">
+            <div class="box-border">
+                <div class="sev-t">
+                    <img src="../images/er.jpg">
+                    <i>关注官方微信</i>
+                </div>
+                <span class="arrow-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="cndns-right-meau meau-top" id="top-back" style="display: none;">
+        <a href="javascript:" class="cndns-right-btn" onclick="topBack()">
+            <i class="icon iconfont icon-up"></i>
+            <em>顶部</em>
+        </a>
+    </div>
+
+</div>
+<!-- end -->
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <!-- 数字滚动 -->
 <script type="text/javascript" src="./js/countup/countUp.js"></script>
@@ -1529,6 +1616,22 @@
             delayTime: 1000
         });
     });
+</script>
+<script type="text/javascript">
+    //置顶图标显示
+    $('#top-back').hide()
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 350) {
+            $("#top-back").fadeIn();
+        }
+        else {
+            $("#top-back").fadeOut();
+        }
+    })
+    //置顶事件
+    function topBack() {
+        $('body,html').animate({ scrollTop: 0 }, 300);
+    }
 </script>
 </body>
 </html>
