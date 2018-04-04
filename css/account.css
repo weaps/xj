@@ -1877,3 +1877,27 @@ body {
 .order-tb-td-l-bor {
     border-left: 1px solid #e5e5e5;
 }
+
+
+/* 找回密码 */
+
+.headline {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #DDD;
+    color: #333;
+    font-size: 18px;
+}
+.headline .headline__content {
+    display: inline-block;
+    zoom: 1;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #333;
+    padding: 12px 0;
+    text-align: left;
+}
+
+.form__wrapper {
+    border: 1px solid #DDD;
+    padding: 30px 0 58px;
+    background: #FFF;
+}
