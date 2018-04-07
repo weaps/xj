@@ -137,7 +137,9 @@
 
             <!-- form -->
             <div class="formContainer">
+                
                 <form action="" class="form">
+                    <h6 class="tips-1 text-primary">请填写您的银行帐户信息，该银行帐户仅用于认证您的身份。</h6>
                     <!-- 真实姓名 -->
                     <div class="input-group">
                         <div class="row">
@@ -146,42 +148,8 @@
                                     <em class="text-danger">*</em>真实姓名：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 所在地 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>所在地：</span>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择省</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择市</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择区/县</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                <input type="text" class="input-box" value="张三" disabled>
+                                <p class="ds">必须用以“张三”为开户名的银行帐号认证</p>
                             </div>
                         </div>
                     </div>
@@ -193,103 +161,52 @@
                                     <em class="text-danger">*</em>身份证号码：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box">
-                                <p class="ds">请填写真实的18位身份证号码</p>
+                                <input type="text" class="input-box" value="340121***********3715" disabled>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 上传证件 -->
+                    <!-- 开户银行 -->
                     <div class="input-group">
                         <div class="row">
                             <div class="col-lg-2">
                                 <span class="formlabel">
-                                    <em class="text-danger">*</em>证件照片：</span>
-                            </div>
-                            <div class="col-lg-10">
-                                <div class="text text-muted">
-                                    <p>请务必使用
-                                        <strong class="text-danger">本人二代身份证原件</strong> 拍摄，请确保证件照片
-                                        <strong class="text-danger">四角完整</strong>、图案文字清晰可见。</p>
-                                    <p>照片不能出现遮挡、水印、logo等证件无关内容。 </p>
-                                    <p>照片文件支持jpg，jpeg，png或bmp格式，单个文件大小不能超过5MB。</p>
-                                    <p>请确保证件有效期填写正确。</p>
-                                </div>
-                    
-                                <!-- 身份证 box -->
-                                <div class="id-box">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <p class="text-center">身份证正面</p>
-                                            <div class="idcon">
-                                                <span class="imgbox">
-                                                    <img src="../images/id_a.jpg" alt="">
-                                                </span>
-                                                <div class="updateBtn">
-                                                    <!-- 上传完成状态 -->
-                                                    <a href="#" class="id-result hide">
-                                                        <img src="../images/id_a.jpg" alt="">
-                                                        <span>重新上传</span>
-                                                    </a>
-                                                    <!-- end -->
-                                                    <!-- 上传中 Loading加载状态 -->
-                                                    <div class="loading hide">
-                                                        <span>上传中……</span>
-                                                        <img src="../images/loading16x16.gif" alt="">
-                                                    </div>
-                                                    <!-- end -->
-                                                    <!-- 默认，未上传状态 -->
-                                                    <a href="#" class="add-id">
-                                                        <img src="../images/icon-add.png" alt="">
-                                                        <span>点击添加</span>
-                                                    </a>
-                                                    <!-- end -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <p class="text-center">身份证反面</p>
-                                            <div class="idcon">
-                                                <span class="imgbox">
-                                                    <img src="../images/id_b.jpg" alt="">
-                                                </span>
-                                                <div class="updateBtn">
-                                                    <!-- 上传完成状态 -->
-                                                    <a href="#" class="id-result">
-                                                        <img src="../images/id_a.jpg" alt="">
-                                                        <span>重新上传</span>
-                                                    </a>
-                                                    <!-- end -->
-                                                    <!-- 上传中 Loading加载状态 -->
-                                                    <div class="loading hide">
-                                                        <span>上传中……</span>
-                                                        <img src="../images/loading16x16.gif" alt="">
-                                                    </div>
-                                                    <!-- end -->
-                                                    <!-- 默认，未上传状态 -->
-                                                    <a href="#" class="add-id">
-                                                        <img src="../images/icon-add.png" alt="">
-                                                        <span>点击添加</span>
-                                                    </a>
-                                                    <!-- end -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 手机号码 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>手机号码：</span>
+                                    <em class="text-danger">*</em>开户银行：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box">
+                                <select name="" id="" class="form-control">
+                                    <option value="">选择开户银行</option>
+                                    <option value="">中国银行</option>
+                                    <option value="">中国工商银行</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 开户行所在地 -->
+                    <div class="input-group">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <span class="formlabel">
+                                    <em class="text-danger">*</em>开户行所在地：</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">选择省</option>
+                                            <option value="">222222</option>
+                                            <option value="">333333</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">选择市</option>
+                                            <option value="">222222</option>
+                                            <option value="">333333</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <p class="ds">我们会将重要进度以短信形式通知您。</p>
                             </div>
                         </div>
@@ -320,8 +237,7 @@
                         <div class="row">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-5">
-                                <a class="button white">取消</a>
-                                <a class="button orange" href="my-certify-bankinfo.html">下一步</a>
+                                <button class="btn btn-danger btn-block btn-lg">提交</button>
                             </div>
                         </div>
                     </div>
