@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="active step">
+                <div class="completed step">
                     <div class="content">
                         <div class="title">
                             <i class="icon iconfont icon-2"></i>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="disabled step">
+                <div class="completed step">
                     <div class="content">
                         <div class="title">                           
                             <i class="icon iconfont icon-3"></i>
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="disabled step">
+                <div class="acitve step">
                     <div class="content">
                         <div class="title">
                             <i class="icon iconfont icon-4"></i>
@@ -136,133 +136,103 @@
             </div>
 
             <!-- form -->
-            <div class="formContainer">
-                
-                <form action="" class="form">
-                    <div class="rz-tips1">
-                        <p>
-                            <b>温馨提示：</b>
-                        </p>
-                        <p>1、不支持信用卡和存折进行认证</p>
-                        <p>2、若开户行为
-                            <em>“农业银行”</em>，请根据
-                            <u class="text-danger">农行帐号填写说明</u>描述填写银行帐号。</p>
+            <div class="formContainer examine">
+                <div class="sum">
+                    <div class="hur4">
+                        <span>申请人：张三</span>
+                        <span>申请时间：2018-04-10</span>
                     </div>
-                    <h6 class="tips-1 text-primary">请填写您的银行帐户信息，该银行帐户仅用于认证您的身份。</h6>
-                    <!-- 真实姓名 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>真实姓名：</span>
-                            </div>
-                            <div class="col-lg-5">
-                                <input type="text" class="input-box" value="张三" disabled>
-                                <p class="ds">必须用以“张三”为开户名的银行帐号认证</p>
-                            </div>
+                    <h4 class="text-green name">申请提交成功，审核中</h4>
+                    <div class="hur3">
+                        <em class="text-danger">*</em>科易宝将会在1~2个工作日内给您的工商银行银行账户（开户名：张三；银行账号：6222021302001836385）转入一笔1元以下的认证金额。
+                        <br>
+                        <em class="text-danger">*</em>若打款成功，科易宝将会通过短信（18019981322）的方式通知您，收到短信提醒后，您需要查询该银行账户的收支明细，并在15日内登录此页面输入正确的认证打款金额。
+                        <br>
+                        <em class="text-danger">*</em>温馨提示：平台认证自动打款系统与财付通合作，查询认证金额时，请留意如下来款信息。（部分银行会备注“实名认证款项”）
+                    </div>
+                    <div class="dkbox">
+    
+                        <div class="dk">
+                            <img src="../images/btn_5.png" alt="">
                         </div>
-                    </div>
-                    <!-- 身份证号码 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>身份证号码：</span>
-                            </div>
-                            <div class="col-lg-5">
-                                <input type="text" class="input-box" value="340121***********3715" disabled>
-                            </div>
+                        <div class="hur1">
+                            付款户名：财付通支付科技有限公司客户备付金
                         </div>
                     </div>
 
-                    <!-- 开户银行 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>开户银行：</span>
-                            </div>
-                            <div class="col-lg-5">
-                                <select name="" id="" class="form-control">
-                                    <option value="">选择开户银行</option>
-                                    <option value="">中国银行</option>
-                                    <option value="">中国工商银行</option>
-                                </select>
-                            </div>
+                    <!--  -->
+                    <div class="authcenter-body-container">
+                        <div class="ui-tiptext-container-message">
+                             请在下方输入工商银行（6222021302001836385）收到的认证打款。
                         </div>
-                    </div>
-
-                    <!-- 开户行所在地 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>开户行所在地：</span>
-                            </div>
-                            <div class="col-lg-5">
+                        <form action="" class="form examine">
+                            <!-- 开户银行 -->
+                            <div class="input-group">
                                 <div class="row">
-                                    <div class="col-lg-5">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择省</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
+                                    <div class="col-lg-2">
+                                        <span class="formlabel">开户银行：</span>
                                     </div>
                                     <div class="col-lg-5">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择市</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
+                                        <div class="text">中国工商银行</div>
                                     </div>
                                 </div>
-                                <p class="ds">我们会将重要进度以短信形式通知您。</p>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 开户行名称 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>开户行名称：</span>
+
+                            <!-- 开户银行帐号 -->
+                            <div class="input-group">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <span class="formlabel">银行帐号：</span>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="text">6222021302001836385</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-5">
-                                <input type="text" class="input-box">
+
+                            <!-- 身份证号码 -->
+                            <div class="input-group">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <span class="formlabel">银行打款金额：</span>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <input type="text" class="input-box">
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="text">元</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                        </div>
+                            <div class="input-group">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-10">
+                                        <p class="text text-danger">* 您有三次输入机会，如果三次输错，需要重新认证。</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 提交 -->
+                            <div class="input-group submitBtn">
+                                <div class="row">
+                                    <div class="col-lg-2"></div>
+                                    <div class="col-lg-10">
+                                        <a class="button orange" href="my-certify-result.html">确认提交</a>
+                                        <a class="button white">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
 
-                    <!-- 银行帐号 -->
-                    <div class="input-group">
-                        <div class="row">
-                            <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>银行帐号：</span>
-                            </div>
-                            <div class="col-lg-5">
-                                <input type="text" class="input-box">
-                                <p class="ds">
-                                     您作为卖方签约时，此银行账户默认为合同订单中的收款账户
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 提交 -->
-                    <div class="input-group submitBtn">
-                        <div class="row">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-5">
-                                <a class="button blue" href="my-certify.html">返回修改</a>
-                                <a class="button orange" href="my-certify-confirmation.html">下一步</a>
-                                <a class="button white">取消</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
+                </div>
+                
             </div>
         </div>
     </div>

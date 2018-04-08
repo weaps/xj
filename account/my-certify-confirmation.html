@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="active step">
+                <div class="completed step">
                     <div class="content">
                         <div class="title">
                             <i class="icon iconfont icon-2"></i>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="disabled step">
+                <div class="active step">
                     <div class="content">
                         <div class="title">                           
                             <i class="icon iconfont icon-3"></i>
@@ -138,27 +138,27 @@
             <!-- form -->
             <div class="formContainer">
                 
-                <form action="" class="form">
-                    <div class="rz-tips1">
-                        <p>
-                            <b>温馨提示：</b>
-                        </p>
-                        <p>1、不支持信用卡和存折进行认证</p>
-                        <p>2、若开户行为
-                            <em>“农业银行”</em>，请根据
-                            <u class="text-danger">农行帐号填写说明</u>描述填写银行帐号。</p>
-                    </div>
-                    <h6 class="tips-1 text-primary">请填写您的银行帐户信息，该银行帐户仅用于认证您的身份。</h6>
+                <form action="" class="form confirmation">
+                    <h6 class="title">请确认个人信息</h6>
                     <!-- 真实姓名 -->
                     <div class="input-group">
                         <div class="row">
                             <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>真实姓名：</span>
+                                <span class="formlabel">真实姓名：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box" value="张三" disabled>
-                                <p class="ds">必须用以“张三”为开户名的银行帐号认证</p>
+                                <div class="text">张三</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 所在地 -->
+                    <div class="input-group">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <span class="formlabel">户口所在地：</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text">安徽省合肥市高新区</div>
                             </div>
                         </div>
                     </div>
@@ -166,28 +166,22 @@
                     <div class="input-group">
                         <div class="row">
                             <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>身份证号码：</span>
+                                <span class="formlabel">身份证号码：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box" value="340121***********3715" disabled>
+                                <div class="text">340000012034523452345</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 开户银行 -->
+                    <!-- 联络方式 -->
                     <div class="input-group">
                         <div class="row">
                             <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>开户银行：</span>
+                                <span class="formlabel">联络方式：</span>
                             </div>
                             <div class="col-lg-5">
-                                <select name="" id="" class="form-control">
-                                    <option value="">选择开户银行</option>
-                                    <option value="">中国银行</option>
-                                    <option value="">中国工商银行</option>
-                                </select>
+                                <div class="text">139788888888</div>
                             </div>
                         </div>
                     </div>
@@ -196,31 +190,31 @@
                     <div class="input-group">
                         <div class="row">
                             <div class="col-lg-2">
-                                <span class="formlabel">
-                                    <em class="text-danger">*</em>开户行所在地：</span>
+                                <span class="formlabel">身份证照片：</span>
                             </div>
                             <div class="col-lg-5">
                                 <div class="row">
-                                    <div class="col-lg-5">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择省</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
+                                    <div class="col-lg-6">
+                                        <img src="../images/id_a.jpg" alt="">
                                     </div>
-                                    <div class="col-lg-5">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">选择市</option>
-                                            <option value="">222222</option>
-                                            <option value="">333333</option>
-                                        </select>
+                                    <div class="col-lg-6">
+                                        <img src="../images/id_b.jpg" alt="">
                                     </div>
                                 </div>
-                                <p class="ds">我们会将重要进度以短信形式通知您。</p>
                             </div>
                         </div>
                     </div>
-                    
+                    <h6 class="title">请确认银行账户信息</h6>
+                    <div class="input-group">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <span class="formlabel">开户姓名：</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text">张三</div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 开户行名称 -->
                     <div class="input-group">
                         <div class="row">
@@ -229,11 +223,30 @@
                                     <em class="text-danger">*</em>开户行名称：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box">
+                                <div class="text">中国工商银行</div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="input-group">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <span class="formlabel">银行所在地：</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text">安徽合肥</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <span class="formlabel">开户行支行名称：</span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text">高新区支行</div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 银行帐号 -->
                     <div class="input-group">
                         <div class="row">
@@ -242,21 +255,19 @@
                                     <em class="text-danger">*</em>银行帐号：</span>
                             </div>
                             <div class="col-lg-5">
-                                <input type="text" class="input-box">
-                                <p class="ds">
-                                     您作为卖方签约时，此银行账户默认为合同订单中的收款账户
-                                </p>
+                                <div class="text">6222021302001867908</div>
                             </div>
                         </div>
                     </div>
-
+                    <hr>
+                    <h6 class="tips-2 text-orange">提醒：银行账号、身份证号码，认证成功之前，最多只能申请认证3次；认证成功后，不能再申请认证。</h6>
                     <!-- 提交 -->
                     <div class="input-group submitBtn">
                         <div class="row">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-5">
                                 <a class="button blue" href="my-certify.html">返回修改</a>
-                                <a class="button orange" href="my-certify-confirmation.html">下一步</a>
+                                <a class="button orange" href="my-certify-examine.html">下一步</a>
                                 <a class="button white">取消</a>
                             </div>
                         </div>
