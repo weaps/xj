@@ -1841,15 +1841,7 @@ body {
     color: #666;
     text-decoration: none;
 }
-/* .zcxxk .shuaixuan li .con a.active {
-    background: #cf3529;
-    border-color: #cf3529;
-    color: #fff;
-} */
-/* .zcxxk .shuaixuan li .con a.active {
-    color: #fff;
-    text-decoration: none;
-} */
+
 .zcxxk .shuaixuan li a:hover,
 .zcxxk .shuaixuan li a.active {
     cursor: pointer;

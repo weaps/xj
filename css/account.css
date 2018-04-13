@@ -938,7 +938,9 @@ body {
 
 .order-title {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -946,7 +948,11 @@ body {
 .order-title-item {
     width: 100%;
     font-size: 16px;
-    height: 44px;
+}
+.order-title-item .breadcrumb {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 .search .itxt {
     height: 22px;
