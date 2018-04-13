@@ -1830,7 +1830,7 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
 }
-.zcxxk .shuaixuan li .con span {
+.zcxxk .shuaixuan li .con a {
     display: inline-block;
     line-height: 22px;
     padding: 0 10px;
@@ -1838,11 +1838,25 @@ body {
     border-radius: 15px;
     background: #fff;
     margin-right: 10px;
+    color: #666;
+    text-decoration: none;
 }
-.zcxxk .shuaixuan li .con span.active {
+/* .zcxxk .shuaixuan li .con a.active {
     background: #cf3529;
     border-color: #cf3529;
     color: #fff;
+} */
+/* .zcxxk .shuaixuan li .con a.active {
+    color: #fff;
+    text-decoration: none;
+} */
+.zcxxk .shuaixuan li a:hover,
+.zcxxk .shuaixuan li a.active {
+    cursor: pointer;
+    color: #fff;
+    border-color: #cf3529;
+    background: #cf3529;
+    transition: all 0.5s ease;
 }
 .zcxxk .table {
     font-size: 18px;
