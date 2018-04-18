@@ -2209,7 +2209,6 @@ body {
     line-height: 40px;
     margin-bottom: 20px;
     background-color: #fff;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.1);
     border-radius: 4px;
     text-align: center;
     font-size: 14px;
@@ -2223,32 +2222,41 @@ body {
     line-height: 24px;
     padding: 20px;
     background: #fff;
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
     border-radius: 4px;
     margin-bottom: 10px;
 }
-.pay .order .amount {
+.pay .amount {
     text-align: right;
     font-size: 14px;
 }
+/* .pay .order .iconright {
+    font-size: 4rem;
+    vertical-align: text-bottom;
+} */
 .pay .order .serial {
     font-size: 12px;
     color: #999;
 }
-.pay .order .amount .amount-price {
+.pay .order .name {
+    margin-bottom: 10px;
+}
+.pay .amount-price {
     font-size: 30px;
     color: #f60;
     font-family: arial,sans-serif;
 }
 .pay .payment-container {
+    width: 100%;
     background: #fff;
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
     border-radius: 4px;
-    padding: 0 20px 50px;
+    padding: 0 30px 50px;
+    box-sizing: border-box;
 }
 .pay .payment-container .payment {
     width: 100%;
-    margin-top: 30px;
+    padding-top: 40px;
 }
 .pay .payment-container .payment-type {
     position: relative;
@@ -2287,4 +2295,84 @@ body {
     height: 30px;
     margin-left: -15px;
     background: url(../images/tj.png) no-repeat;
+    display: none;
+}
+.pay .payment-tab.active .tj {
+    display: block;
+}
+.pay .pay-title {
+    margin-top: 2rem;
+    line-height: 40px;
+}
+.pay .tab-container {
+    padding: 5rem 2rem;
+}
+.pay .tab-container .tab-item {
+    width: 100%;
+    overflow: hidden;
+}
+.pay .tab-container .tab-item .imgbox {
+    float: left;
+    width: 140px;
+}
+.pay .tab-container .tab-item .imgbox img {
+    width: 100%;
+    vertical-align: top;
+}
+.pay .tab-container .tab-item .erbox {
+    float: left;
+    width: 200px;
+    margin-left: 5rem;
+}
+.pay .payment-submit {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    text-align: right;
+}
+.pay .payment-submit .bankcart {
+    font-size: 12px;
+    padding-right: 20px;
+}
+.pay .payment-submit .bankcart a {
+    color: #999;
+}
+
+.pay .tab-item li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    margin: 0 20px 20px 0;
+}
+
+.pay .pay-list {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 60px;
+    border: 2px solid #eee;
+    vertical-align: middle;
+}
+.pay .pay-list.checked {
+    border-color: #f60;
+}
+
+.pay .pay-list input[type="radio"] {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+.pay .pay-list img {
+    height: 27px;
+    vertical-align: middle;
+}
+
+.pay .pay-list .icon {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+.pay .pay-list .title {
+    line-height: 46px;
 }
