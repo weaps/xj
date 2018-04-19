@@ -2130,3 +2130,11 @@ body {
     background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);
 }
+.sub-containerBox .breadcrumb {
+    margin-bottom: 0;
+    padding-left: 0;
+    border-bottom: 0;
+}
+.sub-containerBox .breadcrumb ~ .sub-list-container {
+    padding-top: 0px;
+}
