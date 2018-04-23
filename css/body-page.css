@@ -2138,3 +2138,20 @@ body {
 .sub-containerBox .breadcrumb ~ .sub-list-container {
     padding-top: 0px;
 }
+.timekeeping {
+    padding: 20px 30px;
+    background: #fafafa;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-align: center;
+}
+.timekeeping h4 {
+    font-weight: normal;
+}
+.timekeeping strong {
+    color: #cf3529;
+    padding: 0 5px;
+}
+.timekeeping .end {
+    color: #999;
+}
