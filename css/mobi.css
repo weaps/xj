@@ -531,12 +531,6 @@ progress {
     text-decoration: none;
 }
 
-.btn[disabled] {
-    cursor: default;
-    opacity: 0.5;
-    pointer-events: none;
-}
-
 .btn-primary {
     background-color: #267fd9;
     border-color: #267fd9;
@@ -548,12 +542,23 @@ progress {
     background-color: #2273c3;
 }
 
-.btn-primary[disabled] {
+.btn[disabled],
+.btn-primary[disabled],
+.btn-danger[disabled],
+.btn-orange[disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
 }
-
+.btn-orange {
+    background-color: #ff6f06;
+    border-color: #ff6f06;
+    color: #fff;
+}
+.btn-orange:active,
+.btn-orange:hover {
+    background-color: #ff5000;
+}
 .btn-danger {
     background-color: #CF3529;
     border-color: #CF3529;
@@ -565,11 +570,6 @@ progress {
     background-color: #d74242;
 }
 
-.btn-danger[disabled] {
-    cursor: default;
-    opacity: 0.5;
-    pointer-events: none;
-}
 .btn-danger-line {
     border-color: #CF3529;
     color: #CF3529;
@@ -1467,10 +1467,11 @@ a.cndns-right-btn i {
 }
 
 .panel-heading {
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    font-weight: bold;
 }
 .panel-body {
     padding: 15px;
