@@ -1472,9 +1472,7 @@ body {
     height: 40px;
     background: #fafafa;
 }
-.detail-descript .huodongContainerTab ~ .xn-ds {
-    border-top: none;
-}
+
 .detail-descript .huodongContainerTab:after {
     position: absolute;
     left: 0;
@@ -2157,6 +2155,9 @@ body {
 .sub-containerBox .breadcrumb ~ .sub-list-container {
     padding-top: 0px;
 }
+.breadcrumb ~ .sub-list-container .detail-container {
+    padding-top: 0;
+}
 .timekeeping {
     padding: 20px 30px;
     background: #fafafa;
@@ -2409,4 +2410,105 @@ body {
 }
 .input-group .form-control, .input-group-addon, .input-group-btn {
     display: table-cell;
+}
+
+/* 专利详情页 */
+
+.patent-container .poi-detail {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.patent-container .poi-detail .seller-info-head {
+    float: none;
+    width: 100%;
+}
+.patent-container .poi-detail .seller-info-head .seller-info-body {
+    border-bottom: none;
+}
+.pat-zsctm-ifo {
+    border: 1px solid #eee9e3;
+    background-color: #fffbf6;
+    margin-top: 10px;
+    padding: 20px;
+    position: relative;
+}
+.pat-zsctm-ifo p {
+    color: #838383;
+    font-size: 12px;
+    line-height: 30px;
+}
+.pat-zsctm-ifo p em {
+    font-family: "Arial";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+}
+.pat-zsctm-ifo p i {
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    font-style: normal;
+}
+.pat-zsctm-ifo .text {
+    vertical-align: top;
+    height: 26px;
+    line-height: 22px;
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+}
+.pay-img {
+    display: inline-block;
+    width: 100px;
+    height: 26px;
+    padding: 0 10px;
+}
+.pay-img img {
+    width: 100%;
+    vertical-align: top;
+}
+.pat-zlsc-ctb {
+    padding: 15px  0;
+    font-size: 12px;
+    
+}
+
+.patent-container .scrollHead {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px !important;
+    z-index: 100;
+    border-bottom: 0;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06);
+}
+.patent-container .scrollHead .containerTab_box {
+    width: 1170px;
+    height: 60px;
+    margin: 0 auto;
+}
+.patent-container .scrollHead .containerTab_box ul {
+    float: left;
+    height: 60px;
+    transition: all 0.5s ease;
+}
+.patent-container .scrollHead .containerTab_box ul li {
+    height: 60px;
+    line-height: 60px;
+}
+.patent-container .scrollHead .containerTab_box ul li.active {
+    background: #fff;
+}
+.buy_btn {
+    float: right;
+    width: 200px;
+    height: 48px;
+    margin: 6px 0;
+    display: none;
+}
+
+.patent-container .scrollHead .buy_btn {
+    display: block !important;
+    transition: all 0.9s ease;
 }
