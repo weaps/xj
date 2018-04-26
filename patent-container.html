@@ -565,8 +565,8 @@
 <script src="./js/jquery.select.js"></script>
 <script>
     $(document).ready(function () {
-            $(window).scroll(function (e) {
-                var s_height = e.delegateTarget.scrollY;
+            $(window).scroll(function () {
+                var s_height = document.documentElement.scrollTop;
                 //console.log(s_height);//currentTarget  delegateTarget.screen.scrollY
 
                 if (s_height > 740) {
