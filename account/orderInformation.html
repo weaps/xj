@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>确认订单信息</title>
+<link rel="stylesheet" type="text/css" href="../css/mobi.css">
+<!-- iconfont -->
+<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+<link rel="stylesheet" type="text/css" href="../css/account.css">
+</head>
+
+<body>
+<!-- topmenu -->
+<div class="topNav">
+	<div class="container accountContainer">
+		<div class="row">
+			<div class="col-lg-5 language">
+				<a href="#" class="active">国语</a>/
+				<a href="#">ENG</a>/
+				<a href="#">русский</a>/
+				<a href="#">ئۇيغۇرچە</a>
+			</div>
+			<div class="col-lg-7">
+				<div class="infomation pull-right">
+					<span class="usuallyText">
+						<a href="./index.html" class="username">Moolisi</a>
+						<a href="./login.html">退出</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">我的订单</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">联系我们</a>
+					</span>
+					<span class="usuallyText">
+						<a href="#">帮助中心</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- topmenu end -->
+
+<!-- header -->
+<div class="header bgf">
+	<div class="container accountContainer">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="logo textLogo">
+					<a href="../index.html">
+						<div class="imgbox pull-left">
+							<img src="../images/index-logo.jpg" height="68">
+						</div>
+						<div class="logoText pull-left">
+							确认订单信息
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-7">
+                <div class="stepflex" id="#sflex03">
+                    <dl class="first done">
+                        <dt class="s-num">1</dt>
+                        <dd class="s-text">1.我的购物车
+                            <s></s>
+                            <b></b>
+                        </dd>
+                    </dl>
+                    <dl class="normal doing">
+                        <dt class="s-num">2</dt>
+                        <dd class="s-text">2.填写核对订单信息
+                            <s></s>
+                            <b></b>
+                        </dd>
+                    </dl>
+                    <dl class="normal last">
+                        <dt class="s-num">3</dt>
+                        <dd class="s-text">3.成功提交订单
+                            <s></s>
+                            <b></b>
+                        </dd>
+                    </dl>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- header end -->
+
+
+<!-- main -->
+<section class="bgf">
+    <div id="bd">
+        <h6 class="checkout-tit">填写并核对订单信息</h6>
+
+        <div class="checkout-steps">
+            <div class="step-tit">
+                <h3>收货人信息</h3>
+                <div class="extra-r">
+                    <a href="#none" class="ftx-05 J_consignee_global" onclick="use_NewConsigneeOversea()">新增收货地址</a>
+                    <!--<a href="#none" class="ftx-05" onclick="use_NewConsignee()" clstag="pageclick|keycount|trade_201602181|3">新增收货地址</a>-->
+                    <input type="hidden" id="del_consignee_type" value="0">
+                </div>
+            </div>
+            <div class="consignee-content">
+                <ul>
+                    <li class="ui-switchable-panel">
+                        <label class="addr-detail">
+                            <input type="radio" name="1" checked>
+                            <span class="addr-name" limit="6" title="小米">小米</span>
+                            <span class="addr-info" limit="45" title="北京 朝阳区 五环到六环之间 左家庄路甲2号北京国际友谊花园6幢304">北京 朝阳区 五环到六环之间 左家庄路甲2号北京国际友谊花园6幢304</span>
+                            <span class="addr-tel">180****1343</span>
+                        </label>
+                    </li>
+                    <li class="ui-switchable-panel">
+                        <label class="addr-detail">
+                            <input type="radio" name="1">
+                            <span class="addr-name" limit="6" title="小米">小米</span>
+                            <span class="addr-info" limit="45" title="北京 朝阳区 五环到六环之间 左家庄路甲2号北京国际友谊花园6幢304">北京 朝阳区 五环到六环之间 左家庄路甲2号北京国际友谊花园6幢304</span>
+                            <span class="addr-tel">180****1343</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 支付方式 -->
+            <div class="setp_pay">
+                <div class="step-tit">
+                    <h3>支付方式</h3>
+                </div>
+                <div class="payment-list">
+                    <div class="list-cont">
+                        <ul>
+                            <li>
+                                <div class="payment-item item-selected">
+                                    <b></b>
+                                    <span>在线支付</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment-item">
+                                    <b></b>
+                                    <span>线下付款</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-info-list order-tb">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>商品</td>
+                        <td class="text-center">交易方式</td>
+                        <td class="text-center">价格</td>
+                        <td class="text-center">状态</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-bd">
+                        <td>
+                            <div class="goods-item">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img class="" src="../img/p4.jpg" width="60" height="60">
+                                    </a>
+                                </div>
+                                <div class="p-msg">
+                                    <div class="p-name">
+                                        <a href="#" class="a-link">电磁式可调阻尼握力器 分别安装在所述轨道约束器1两侧且两两对应的第一滑槽</a>
+                                    </div>
+                                    <div class="number">x1</div>
+                                    <p class="pz">专利（申请号）：201620085150.1</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="order-tb-td-l-bor">
+                            <div class="tooltip">完全转让</div>
+
+                        </td>
+                        <td class="order-tb-td-l-bor">
+                            <div class="tooltip">
+                                <strong>¥1800.00</strong>
+                                <br>
+                                <span class="ftx-13">在线支付</span>
+                            </div>
+                        </td>
+                        <td class="order-tb-td-l-bor">
+                            <div class="tooltip"></div>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                <tbody class="spl-mod__step-pay">
+                    <tr>
+                        <td>
+                            <span class="step-pay-text">阶段1：支付交易保证金<em>(保证金为订单总额的10%)</em></span>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                        <td><strong class="span_text">￥1000.00</strong></td>
+                        <td><span class="span_text"></span></td>
+                    </tr>
+                </tbody>
+                <tbody class="spl-mod__step-pay">
+                    <tr>
+                        <td>
+                            <span class="step-pay-text">阶段2：签署合作协议</span>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="spl-mod__step-pay">
+                    <tr>
+                        <td>
+                            <span class="step-pay-text">阶段3：支付交易尾款</span>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                        <td>
+                            <strong class="span_text">￥17000.00</strong>
+                        </td>
+                        <td>
+                            <span class="span_text"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="totalWrap">
+            <ul>
+                <li>
+                    <span>商品定金：</span>
+                    <span>￥1000.00</span>
+                </li>
+                <li>
+                    <span>服务费：</span>
+                    <span>￥99.00</span>
+                </li>
+                <li>
+                    <span>
+                        <h6>定金需付款:</h6>
+                    </span>
+                    <span><h6 class="text-danger">￥1000.00</h6></span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>商品尾款：</span>
+                    <span>￥17000.00</span>
+                </li>
+                <li>
+                    <span>服务费：</span>
+                    <span>￥99.00</span>
+                </li>
+                <li>
+                    <span>优惠：</span>
+                    <span>-￥100.00</span>
+                </li>
+                <li>
+                    <span>
+                        <h6>尾款需付款:</h6>
+                    </span>
+                    <span>
+                        <h6 class="text-danger">￥16900.00</h6>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="checkout-buttons">
+            <button type="button" class="btn btn-orange btn-lg">提交订单</button>
+        </div>
+        
+    </div>
+</section>
+
+
+
+<!-- main end -->
+<!-- footer -->
+<div class="container footer">
+	<div class="text-center text-small content">
+		<p>
+			<span>
+				<a href="#">关于我们</a>
+			</span>
+			<span>
+				<a href="#">联系我们</a>
+			</span>
+			<span>
+				<a href="#">知识产权保护</a>
+			</span>
+			<span>
+				<a href="#">著作权与商标声明</a>
+			</span>
+			<span>
+				<a href="#">法律声明</a>
+			</span>
+			<span>
+				<a href="#">服务条款</a>
+			</span>
+			<span>
+				<a href="#">隐私政策</a>
+			</span>
+		</p>
+		<p>
+			<span>版权所有：国家技术转移东部中心 新疆分中心 </span>
+			<span>
+				<a class="text-danger" href="#">新ICP备16001593号</a>
+			</span>
+			<span>Copyright © 2017</span>
+		</p>
+		<p>
+			<span>新公网安备 65010402000660号</span>
+		</p>
+	</div>
+	<!--  -->
+</div>
+<!-- footer end -->
+</body>
+</html>
