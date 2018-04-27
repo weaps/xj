@@ -2624,7 +2624,7 @@ body {
 }
 .totalWrap ul {
     width: 100%;
-    padding-bottom: 20px;
+    padding: 10px 0;
     overflow: hidden;
 }
 .totalWrap ul ~ ul {
@@ -2646,6 +2646,6 @@ body {
     width: 100%;
     height: 50px;
     line-height: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: right;
 }
