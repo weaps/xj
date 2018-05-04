@@ -4,7 +4,6 @@ html {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
-    text-size-adjust: 100%;
 }
 
 *,
@@ -231,19 +230,10 @@ textarea {
     touch-action: manipulation;
 }
 
-::-webkit-file-upload-button,
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
-    -webkit-appearance: button;
-    appearance: button;
-}
 
 [type=search] {
     -moz-appearance: none;
     -webkit-appearance: none;
-    appearance: none;
 }
 
 ::-webkit-file-upload-button {
@@ -508,7 +498,6 @@ progress {
 .btn {
     -moz-appearance: none;
     -webkit-appearance: none;
-    appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 0.0875rem;
@@ -629,7 +618,6 @@ input[type=radio] {
 .form textarea {
     -moz-appearance: none;
     -webkit-appearance: none;
-    appearance: none;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 0.1875rem;
@@ -662,7 +650,6 @@ input[type=radio] {
     .form [type=week] {
         -moz-appearance: none;
         -webkit-appearance: none;
-        appearance: none;
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 0.1875rem;
