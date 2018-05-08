@@ -2512,3 +2512,225 @@ body {
     display: block !important;
     transition: all 0.9s ease;
 }
+
+
+/* 专题页面 */
+
+/* 通用banner */
+
+.common-banner,
+.common-box,
+.common-box dl,
+.qualifications .pimg,
+.service_flow {
+    width: 100%;
+    overflow: hidden;
+}
+.common-banner {
+    position: relative;
+}
+.common-banner img {
+    width: 100%;
+    vertical-align: top;
+}
+.common-banner .abtn-box {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    
+}
+.common-banner .abtn{
+    border-radius: 30px;
+    line-height: 55px;
+    padding: 14px 45px;
+    background-color: #FFF;
+    color: #333;
+    margin: 0px 15px;
+    font-size: 18px;
+}
+.common-banner .abtn.pink {
+    background: #ff5565;
+    color: #fff;
+}
+
+.common-container {
+    width: 100%;
+    padding: 3rem 0;
+    background: #fff;
+    overflow: hidden;
+}
+.common-container.gray-bg {
+    background: #f6f6f6;
+}
+.common-title {
+    height: 82px;
+    background: url(../images/xtiao10.png) no-repeat center bottom;
+    text-align: center;
+}
+.common-title .title {
+    color: #cf3529;
+    font-size: 30px;
+    font-weight: 100;
+}
+.common-title .discription {
+    color: #bbb;
+}
+.common-box {
+    padding: 20px 0;
+}
+
+.common-box dl {
+    padding: 20px 0;
+}
+.common-box dt,
+.common-box dd {
+    font-size: 18px;
+    line-height: 30px;
+}
+.common-box dt {
+    padding-bottom: 10px;
+}
+
+.common-container .info-box {
+    width: 100%;
+}
+.common-container .info-box h3 {
+    padding-top: 20px;
+}
+.common-container .infotext {
+    padding: 20px 30px;
+}
+.qualifications {
+    width: 280px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+.qualifications img,
+.service_flow .line img {
+    width: 100%;
+    vertical-align: top;
+}
+.qualifications .pimg {
+    position: relative;
+}
+.qualifications .pimg .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.qualifications .name {
+    line-height: 1.5;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.qualifications .company {
+    background: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+.pingu {
+    padding: 80px;
+    text-align: center;
+}
+.common-box.advantage {
+    padding-top: 5rem;
+}
+.common-box.advantage .panel {
+    position: relative;
+    border-radius: 2px;
+    padding: 20px 30px 20px 100px;
+    margin-bottom: 30px;
+}
+.common-box.advantage .panel .iconbox {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100%;
+}
+.common-box.advantage .panel .iconbox .icon {
+    display: inline-block;
+    width: 60px;
+    height: 142px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.common-box.advantage .panel .icon img {
+    vertical-align: middle;
+}
+.common-box.advantage .panel small {
+    color: #bbb;
+}
+.common-box.advantage .panel .text {
+    font-size: 14px;
+    padding-top: 5px;
+}
+.our_advantages .panel {
+    height: 400px;
+}
+.our_advantages .icon {
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.our_advantages .title {
+    padding: 2rem 0;
+}
+.our_advantages .text {
+    padding: 2rem;
+    text-align: center;
+}
+.service_flow {
+    padding: 4rem 0;
+}
+.service_flow ul {
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+.service_flow li {
+    float: left;
+    width: 20%;
+    height: 150px;
+}
+.service_flow .line {
+    width: 100%;
+    height: 37px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.service_flow li .box .icon {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+}
+.high-tech {
+    padding: 4rem 0;
+}
+.high-tech .box {
+    width: 180px;
+    height: 300px;
+    margin: 0 auto;
+}
+.high-tech .box h4 {
+    padding: 2rem 0;
+    text-align: center;
+}
