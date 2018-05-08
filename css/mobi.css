@@ -694,6 +694,17 @@ fieldset[disabled] .form-control,
     background-color: #eee;
     opacity: 1;
 }
+.form-control.input-sm {
+    height: 26px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+select.input-sm {
+    height: 26px;
+    /* line-height: 30px; */
+}
 .scroll-view {
     -webkit-overflow-scrolling: touch;
     overflow: auto;

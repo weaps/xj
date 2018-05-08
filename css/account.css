@@ -2652,3 +2652,14 @@ body {
     margin-top: 10px;
     text-align: right;
 }
+
+.my-filtrate {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.my-filtrate .form-box {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
