@@ -508,6 +508,7 @@ progress {
     line-height: 1.25;
     padding: 0.4125rem 1.025rem;
     text-align: center;
+    transition: color .3s ease-in-out,background .3s ease-in-out;
 }
 .btn.btn-sm {
     padding: 0 10px;
@@ -515,6 +516,15 @@ progress {
     font-size: 12px;
     height: 22px;
     line-height: 22px;
+}
+
+.btn-hollow {
+    /* padding: 4px 12px; */
+    /* font-size: 12px; */
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 40px;
+    background: none;
 }
 
 .btn:active,
@@ -571,6 +581,13 @@ progress {
     background-color: #fff;
     border-color: #d74242;
     color: #d74242;
+}
+.btn-white-line {
+    color: #fff;
+}
+.btn-white-line:hover {
+    background: #fff;
+    color: #333;
 }
 
 .btn-block {
@@ -770,6 +787,11 @@ a.text-primary {
     box-sizing: border-box;
 }
 
+.container-mini {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 /* topnav css style */
 
 .topNav {

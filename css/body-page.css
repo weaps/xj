@@ -859,8 +859,7 @@ body {
 .zhuanjiaDetail .top_box {
     position: relative;
     width: 100%;
-    height: 500px;
-    margin-bottom: 3rem;
+    padding-bottom: 80px;
     background: linear-gradient(-180deg, #182460 0%, #0e81a5 100%);
 }
 .top_box-bg{
@@ -875,11 +874,20 @@ body {
     background: url(../images/zhuanjia-arrow-lr.png) center;
     z-index: 1;
 }
-
+.user-follow-button {
+    /* padding: 20px 100px 0 0; */
+    position: absolute;
+    top: 80px;
+    right: 70px;
+}
+.user-follow-button .btn {
+    margin-left: 20px;
+}
 .top_box .teacher_box {
     position: relative;
+    height: 420px;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding-top: 4rem;
     text-align: center;
     z-index: 2;
 }
@@ -928,13 +936,16 @@ body {
 }
 .top_box .lebalbox {
     width: 100%;
+    padding: 20px 0;
     overflow: hidden;
     text-align: center;
+}
+.top_box .star {
+    color: #ddd;
 }
 
 .top_box .payattention-btn {
     display: inline-block;
-    margin: 24px 0 36px;
     padding: 0;
     height: 26px;
     border-radius: 20px;
@@ -948,10 +959,32 @@ body {
     /* border: 1px solid rgba(255,255,255,.6); */
     transition: color .3s ease-in-out,background .3s ease-in-out;
 }
-/* .top_box a:hover.payattention-btn {
-    background: #fff;
-    color: #333;
-} */
+.top_box  .tea-detail-box {
+    width: 100%;
+    padding-top: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+.top_box  .tea-detail-box li {
+    margin-right: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.top_box  .tea-detail-box li:last-child {
+    margin-right: 0;
+}
+.top_box  .tea-detail-box li .num {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+.top_box  .tea-detail-box .text {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(255,255,255,.6);
+}
 
 .sub_about {
     font-size: 14px;
