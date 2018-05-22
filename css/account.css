@@ -254,7 +254,8 @@ body {
     width: 100%;
 }
 
-.login-bottom {
+.login-bottom,
+.sixicon ul {
     width: 100%;
     padding-top: 20px;
     overflow: hidden;
@@ -615,13 +616,31 @@ body {
 }
 
 /*个人信息*/
-
+.component-account-info .seniorMember {
+    padding: 20px 25px;
+}
+.component-account-info .seniorMember h6 {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.component-account-info .seniorMember .discription {
+    color: #bbb;
+    padding-right: 10px;
+}
+.component-account-info .sixicon {
+    width: 100%;
+    padding-top: 2rem;
+}
+.component-account-info .sixicon li {
+    float: left;
+    width: 125px;
+    overflow: hidden;
+}
 .account-info {
     width: 819px;
     height: 120px;
     border-right: 1px #eee solid;
     border-top: 1px #eee solid;
-    background-image: url(../images/bg-account-info.png)
 }
 
 .account-info .avatar-box {
@@ -2001,6 +2020,10 @@ body {
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
+.button.big {
+   padding: .6em 3em;
+   font-size: 18px;
+}
 .button:hover {
 	text-decoration: none;
 }
@@ -2317,7 +2340,7 @@ body {
 }
 .pay .tab-container .tab-item .erbox {
     float: left;
-    width: 200px;
+    width: 300px;
     margin-left: 5rem;
 }
 .pay .payment-submit {
@@ -2373,6 +2396,37 @@ body {
     line-height: 46px;
 }
 
+.member-banner {
+    width: 100%;
+    padding-top: 1rem;
+    line-height: 100px;
+    color: #e36f09;
+}
+.member-banner h1 {
+    font-weight: 100;
+    color: rgb(227, 111, 9);
+
+}
+
+.memberPay {
+    background: url(../images/growth-banner-bg.png) no-repeat;
+    background-size: 100%;
+}
+.pay.memberbox {
+    width: 780px;
+    margin: 0 auto;
+}
+.member-content {
+    padding: 3rem 3rem 3rem 14rem;
+}
+.member-content li {
+    line-height: 40px;
+}
+.member-content .cp {
+    font-size: 14px;
+    color: #bbb;
+    padding: 1rem 0 0 3px;
+}
 /* orderInformation */
 
 .stepflex {

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高级会员-购买确认</title>
+    <link rel="stylesheet" type="text/css" href="../css/mobi.css">
+    <!-- iconfont -->
+    <link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/account.css">
+</head>
+
+<body>
+<!-- topmenu -->
+<div class="topNav">
+    <div class="container accountContainer">
+        <div class="row">
+            <div class="col-lg-5 language">
+                <a href="#" class="active">国语</a>/
+                <a href="#">ENG</a>/
+                <a href="#">русский</a>/
+                <a href="#">ئۇيغۇرچە</a>
+            </div>
+            <div class="col-lg-7">
+                <div class="infomation pull-right">
+                    <span class="usuallyText">
+                        <a href="./index.html" class="username">Moolisi</a>
+                        <a href="./login.html">退出</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">我的订单</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">联系我们</a>
+                    </span>
+                    <span class="usuallyText">
+                        <a href="#">帮助中心</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- topmenu end -->
+
+<!-- header -->
+<div class="header bgf">
+    <div class="container accountContainer">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="logo textLogo">
+                    <a href="../index.html">
+                        <div class="imgbox pull-left">
+                            <img src="../images/index-logo.jpg" height="68">
+                        </div>
+                        <div class="logoText pull-left">
+                            超级会员
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="accountSearch pull-right form">
+                    <form action="">
+                        <input type="text" class="pull-left" placeholder="请输入关键字">
+                        <button class="btn btn-danger pull-right">
+                            <i class="icon iconfont icon-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+<div class="memberPay">
+    <div class="member-banner">
+        <h1 class="text-center">开通高级会员，立享超值特权</h1>
+    </div>
+    <div id="bd">
+        <div class="pay memberbox">
+            <div class="payment-container shadowbox">
+                <div class="member-content">
+                    <ul>
+                        <li>
+                            <span>开通服务：</span>
+                            <strong>高级会员</strong>
+                        </li>
+                        <li>
+                            <span>支付方式：</span>
+                            <strong>按年支付</strong>
+                        </li>
+                        <li>
+                            <span>应付金额：</span>
+                            <strong class="text-danger">￥149</strong>
+                        </li>
+                        <li>
+                            <p class="top-gap-big">你已绑定手机且实名认证，可以购买高级会员.</p>
+                        </li>
+                    </ul>
+                    <div class="top-gap-big">
+                        <a href="pay.html" class="button orange big">立即支付</a>
+                        <p class="cp">购买即视为同意 <a href="#">《新疆技术转移技术服务平台会员协议》</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- footer -->
+<div class="container footer">
+    <div class="text-center text-small content">
+        <p>
+            <span>
+                <a href="#">关于我们</a>
+            </span>
+            <span>
+                <a href="#">联系我们</a>
+            </span>
+            <span>
+                <a href="#">知识产权保护</a>
+            </span>
+            <span>
+                <a href="#">著作权与商标声明</a>
+            </span>
+            <span>
+                <a href="#">法律声明</a>
+            </span>
+            <span>
+                <a href="#">服务条款</a>
+            </span>
+            <span>
+                <a href="#">隐私政策</a>
+            </span>
+        </p>
+        <p>
+            <span>版权所有：国家技术转移东部中心 新疆分中心 </span>
+            <span>
+                <a class="text-danger" href="#">新ICP备16001593号</a>
+            </span>
+            <span>Copyright © 2017</span>
+        </p>
+        <p>
+            <span>新公网安备 65010402000660号</span>
+        </p>
+    </div>
+    <!--  -->
+</div>
+<!-- footer end -->
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    // index tab
+    var $tabContainer = $('.payment-type ul li');
+    $tabContainer.click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        var index = $tabContainer.index(this);
+        // $('div.tab-container > .tab-item').eq(index).show().siblings().hide();
+        $('div.tab-container > .tab-item').eq(index).removeClass('hide').siblings().addClass('hide');
+    });
+</script>
+</body>
+</html>
