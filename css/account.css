@@ -2398,12 +2398,11 @@ body {
 
 .member-banner {
     width: 100%;
-    padding-top: 1rem;
-    line-height: 100px;
-    color: #e36f09;
+    padding-top: 3rem;
 }
 .member-banner h1 {
     font-weight: 100;
+    /* line-height: 100px; */
     color: rgb(227, 111, 9);
 
 }
@@ -2426,6 +2425,30 @@ body {
     font-size: 14px;
     color: #bbb;
     padding: 1rem 0 0 3px;
+}
+
+.member-page-six {
+    padding: 2rem;
+}
+.member-page-six ul {
+    margin: 0 -2rem;
+    overflow: hidden;
+}
+.member-page-six li {
+    float: left;
+    width: 33.3333%;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+.member-page-six li .icon {
+    font-size: 48px;
+    font-weight: 100;
+    color: rgb(227, 111, 9);
+}
+.member-page-six li p {
+    text-align: justify;
 }
 /* orderInformation */
 
