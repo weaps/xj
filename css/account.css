@@ -633,8 +633,23 @@ body {
 }
 .component-account-info .sixicon li {
     float: left;
-    width: 125px;
+    width: 25%;
+    text-align: center;
     overflow: hidden;
+}
+.component-account-info .sixicon .icon {
+    font-size: 44px;
+    color: #ddd;
+}
+.component-account-info .sixicon .title {
+    color: #999;
+}
+.component-account-info .sixicon.member .icon {
+    font-size: 44px;
+    color: rgb(227, 111, 9);
+}
+.component-account-info .sixicon.member .title {
+    color: #333;
 }
 .account-info {
     width: 819px;
@@ -2430,25 +2445,51 @@ body {
 .member-page-six {
     padding: 2rem;
 }
+.h1-title {
+    position: relative;
+    text-align: center;
+    font-weight: 100;
+    /* padding: 5rem 0 2rem 0; */
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+.h1-title .icon {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -32px;
+    font-size: 64px;
+    color: rgb(227, 111, 9);
+}
 .member-page-six ul {
     margin: 0 -2rem;
+    padding-top: 1rem;
     overflow: hidden;
 }
 .member-page-six li {
     float: left;
-    width: 33.3333%;
+    width: 50%;
     padding: 2rem;
     overflow: hidden;
     text-align: center;
     box-sizing: border-box;
 }
 .member-page-six li .icon {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 100;
     color: rgb(227, 111, 9);
 }
-.member-page-six li p {
-    text-align: justify;
+.member-page-six .title {
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.member-page-six .text {
+    width: 70%;
+    height: 65px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
 }
 /* orderInformation */
 
