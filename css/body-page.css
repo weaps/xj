@@ -856,147 +856,112 @@ body {
 
 /* 专家详情页 */
 
-.zhuanjiaDetail .top_box {
-    position: relative;
-    width: 100%;
-    padding-bottom: 80px;
-    background: linear-gradient(-180deg, #182460 0%, #0e81a5 100%);
-}
-.top_box-bg{
-    background: url(../images/TB1DIWklxrI8KJjy0FpXXb5hVXa-1600-880.png) center;
+.zhuanjia-banner {
+    background: url(../images/zj_img.jpg) no-repeat center;
     background-size: 100%;
+    height: 400px;
 }
-.top_box .bottom_trangle {
-    position: absolute;
-    bottom: 0;
+.zj-people-infomation {
+    position: relative;
+    height: 200px;
+    background: #f0f0f0;
+    padding-bottom: 40px;
+    margin-bottom: 3rem;
+}
+.zj-people-infomation .imgbox {
+    width: 200px;
+    height: 200px;
+    margin-top: -30px;
+}
+
+.zj-people-infomation .imgbox img {
     width: 100%;
-    height: 137px;
-    background: url(../images/zhuanjia-arrow-lr.png) center;
-    z-index: 1;
+    border: 12px solid #fafafa;
+    border-radius: 100px;
+    box-sizing: border-box;
 }
-.user-follow-button {
-    /* padding: 20px 100px 0 0; */
-    position: absolute;
-    top: 80px;
-    right: 70px;
+.zj-people-infomation .infoCon {
+    padding: 1rem 0 0 2rem;
 }
-.user-follow-button .btn {
-    margin-left: 20px;
-}
-.top_box .teacher_box {
-    position: relative;
-    height: 420px;
-    margin: 0 auto;
-    padding-top: 4rem;
-    text-align: center;
-    z-index: 2;
-}
-.top_box .teacher_box img {
-    width: 114px;
-    height: 114px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-}
-
-.top_box .teacher_box .tea-title {
-    position: relative;
-    margin: -24px auto 0;
-    width: 149px;
-    height: 56px;
-    text-align: center;
-    color: #fff;
-    background: url(../images/flag-bg.png);
-    z-index: 2;
-}
-.top_box .teacher_box .tea-title p {
-    opacity: .7;
-    font-size: 11px;
-    line-height: 24px;
-}
-.top_box .teacher_box .tea-title h3 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14px;
-}
-
-.top_box .tea-nickname {
-    margin-top: 12px;
+.zj-people-infomation .infoCon .name {
     font-size: 24px;
+    color: #333;
     font-weight: 500;
-    color: #fff;
-    line-height: 24px;
-    margin-top: 1rem;
 }
-.top_box .tea-professional {
-    margin-top: 12px;
+.zj-people-infomation .infoCon .name small {
+    padding-left: 0.6rem;
+    color: #999;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 14px;
-    font-weight: normal;
 }
-.top_box .lebalbox {
+.zj-people-infomation .infoCon .labelbox {
+    padding-top: 0.5rem;
+}
+.zj-people-infomation .infoCon .labelbox .label {
+    margin-right: 0.5rem;
+}
+.zj-people-infomation .info {
     width: 100%;
-    padding: 20px 0;
-    overflow: hidden;
-    text-align: center;
+    padding-top: 1rem;
 }
-.top_box .star {
-    color: #ddd;
-}
-
-.top_box .payattention-btn {
+.zj-people-infomation .info ul li {
     display: inline-block;
-    padding: 0;
-    height: 26px;
-    border-radius: 20px;
-    background: #2d3035;
-    background-color: hsla(0,0%,100%,.1);
-    padding: 0 1rem;
+}
+.zj-people-infomation .info ul .meta-block {
     font-size: 12px;
-    line-height: 26px;
-    color: rgba(255,255,255,.6);
-    text-decoration: none;
-    /* border: 1px solid rgba(255,255,255,.6); */
-    transition: color .3s ease-in-out,background .3s ease-in-out;
+    margin: 0 7px 6px 0;
+    padding: 0 1rem 0 0.5rem;
+    border-right: 1px solid #f0f0f0;
 }
-.top_box  .tea-detail-box {
-    width: 100%;
+.zj-people-infomation .btnbox {
     padding-top: 2rem;
-    overflow: hidden;
-    text-align: center;
+    text-align: right;
 }
-.top_box  .tea-detail-box li {
-    margin-right: 100px;
+.zj-people-infomation .btnbox .btn {
+    border-radius: 50px;
+}
+.zj-people-infomation .three-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: -200px;
+    background: #fff;
+    border-radius: 40px;
+    text-align:center; 
+}
+.zj-people-infomation .three-btn .btn {
     display: inline-block;
-    text-align: center;
+    border-radius: 100px;
+    margin-right: 1rem;
 }
-.top_box  .tea-detail-box li:last-child {
+.zj-people-infomation .three-btn .btn:last-child {
     margin-right: 0;
 }
-.top_box  .tea-detail-box li .num {
-    margin-bottom: 8px;
-    font-size: 24px;
+.zj .ganxingqu .imgbox {
+    width: 48px;
+    height: 48px;
+}
+.zj .ganxingqu .imgbox,
+.zj .ganxingqu .imgbox img {
+    border-radius: 100px;
+}
+.zj .ganxingqu .imgbox .no-img {
+    line-height: 48px;
+    font-size: 10px;
+}
+.zj .ganxingqu .detail {
+    margin-left: 60px;
+    height: 58px;
+}
+.zj .ganxingqu .detail .name {
+    height: 24px;
     line-height: 24px;
-    color: #fff;
-    text-decoration: none;
 }
-.top_box  .tea-detail-box .text {
-    font-size: 14px;
-    line-height: 14px;
-    color: rgba(255,255,255,.6);
+.zj .ganxingqu .detail .name .icon {
+    font-size: 10px;
 }
-
-.sub_about {
-    font-size: 14px;
-    color: rgba(255,255,255,.7);
-}
-.sub_about span {
-    padding: 0 0.5rem;
-}
-
-
-
-
 
 /* 协作机构 */
 .index-jigou .title {
@@ -1027,7 +992,6 @@ body {
     text-align:center;
     display: table-cell;
     vertical-align: middle;
-    /* font-size: 90px; */
 }
 .index-jigou-con li img {
     display: inline-block;
@@ -1682,8 +1646,8 @@ body {
 }
 .detail-descript .title {
     line-height: 40px;
-    font-size: 24px;
-    color: #cf3529;
+    font-size: 18px;
+    color: #333;
     font-weight: 600;
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(221, 221, 221, .5);

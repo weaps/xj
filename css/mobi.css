@@ -604,6 +604,24 @@ progress {
     font-size: 12px;
     line-height: 1.5;
 }
+.btn-radius {
+    border-radius: 100px !important;
+}
+.label {
+    display: inline;
+    padding: .3em 1em;
+    font-size: 75%;
+    line-height: 1;
+    background: rgba(0, 0, 0, .15);
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 25em;
+}
+.label.green {
+    background: #05CC47;
+}
 
 .form {
     margin: 0;
@@ -754,7 +772,7 @@ select.input-sm {
     color: #774FFF;
 }
 .text-green {
-    color: #05CC47;
+    color: #05CC47 !important;
 }
 .text-orange {
     color: #ff5000;
@@ -764,6 +782,11 @@ select.input-sm {
 }
 .text-pink {
     color: #FF6399;
+}
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 a.text-danger,
