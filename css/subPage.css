@@ -318,17 +318,23 @@ body {
     background: url(../images/TB1DIWklxrI8KJjy0FpXXb5hVXa-1600-880.png) no-repeat center top;
 }
 .help_container_bg .search-box .sch-box {
-    width: 826px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     position: relative;
 }
+.help_container_bg .search-box .sch-box .col {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
 .help_container_bg .search-box .f-text {
-    border: 3px solid #cf3529;
-    padding: 10px;
-    height: 48px;
-    width: 680px;
+    border: 0;
+    border-radius: 15px 0 0 0;
+    padding: 10px 20px;
+    height: 40px;
+    width: 554px;
     vertical-align: top;
     float: left;
     color: #9e9e9e;
@@ -340,16 +346,35 @@ body {
 }
 .help_container_bg .search-box .btn-search {
     background-color: #cf3529;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "microsoft yahei";
     color: #fff;
     border-radius: none;
     border: 0;
+    border-radius: 0 20px 20px 0;
     vertical-align: top;
-    height: 48px;
-    width: 120px;
+    height: 40px;
+    width: 100px;
     float: left;
-    font-weight: bold;
+}
+.help_container_bg .search-box .sch-box .quick {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.help_container_bg .search-box .sch-box .quick a {
+    margin-right: 2rem;
+    color: #666;
+}
+.help_container_bg .search-box .sch-box .quick a.hot {
+    color: #cf3529;
+}
+.question-nav .m-title {
+    height: 48px;
+    background: #cf3529;
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    line-height: 48px;
+    color: #fff;
 }
 .question-nav .q-nav-ol-list,
 .question-nav .q-nav-ul-list {
@@ -363,11 +388,11 @@ body {
     font-weight: normal;
     font-size: 16px;
     color: #666;
-    background: #eee;
+    background: #fff;
     cursor: pointer;
 }
 .question-nav .q-nav-ol-list .title:hover {
-    background: #e0e0e0;
+    background: #fafafa;
 }
 .question-nav .q-nav-ol-list .title:before {
     position: absolute;
@@ -384,6 +409,7 @@ body {
 .question-nav .q-nav-ul-list {
     display: none;
     padding: 5px 0;
+    background: #eee;
 }
 .question-nav .q-nav-ol-list .title.open ~ .q-nav-ul-list {
     display: block;
@@ -405,4 +431,31 @@ body {
     color: #cf3529;
 }
 
+.scb-chart .usual-box {
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+}
+.scb-chart > .usual-box > .tit {
+    height: 46px;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 0;
+    color: #666;
+}
+.scb-chart > .usual-box > .tit >.icon-box {
+    width: 26px;
+    height: 26px;
+    vertical-align: top;
+    margin: 0 6px 0 12px;
+    color: #fff;
+    background: #cf3529;
+    border-radius: 13px;
+    display: inline-block;
+    line-height: 26px;
+    text-align: center;
+}
+.scb-chart > .usual-box > .tit >.icon-box .iconfont {
+    font-weight: bold;
+}
 
