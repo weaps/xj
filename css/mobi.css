@@ -772,7 +772,7 @@ select.input-sm {
     color: #774FFF;
 }
 .text-green {
-    color: #05CC47 !important;
+    color: rgb(5, 204, 71) !important;
 }
 .text-orange {
     color: #ff5000;
