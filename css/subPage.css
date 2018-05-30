@@ -321,11 +321,11 @@ body {
 /* 帮助中心 */
 .help_container_bg {
     background: url(../images/growth-banner-bg.png) no-repeat;
+    background-size: 100%; 
 }
 .help_container_bg .search-box {
     height: 150px;
     padding-top: 3rem;
-    background: url(../images/TB1DIWklxrI8KJjy0FpXXb5hVXa-1600-880.png) no-repeat center top;
 }
 .help_container_bg .search-box .sch-box {
     width: 700px;

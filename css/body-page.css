@@ -1736,6 +1736,7 @@ body {
 .poi-detail .seller-info-body .item {
     width: 100%;
     height: 30px;
+    line-height: 30px;
     font-size: 14px;
     color: #666;
 }
@@ -1744,7 +1745,6 @@ body {
     /* display: inline-block; */
     width: 50%;
     height: 30px;
-    line-height: 30px;
 }
 .jianjie {
     padding: 10px 0 0 80px;
@@ -3029,4 +3029,62 @@ body {
 .high-tech .box h4 {
     padding: 2rem 0;
     text-align: center;
+}
+
+.sub-list-container.tasklist_main {
+    padding-top: 1rem;
+}
+.tasklist_main .task-title {
+    width: 100%;
+    line-height: 32px;
+    padding-bottom: 1rem;
+}
+.tasklist_main .task-title strong {
+    border-left: 4px solid currentColor;
+    padding-left: 0.6rem;
+    font-size: 18px;
+    color: #ff5000;
+}
+.steps-container {
+    width: 100%;
+    height: 47px;
+    margin-bottom: 1rem;
+}
+
+.task-list-con {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.task-list-con .seller_li {
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 220px;
+    padding: 1rem;
+    list-style: outside none none;
+}
+.task-list-con .seller_li .name {
+    color: #222;
+    font-size: 16px;
+    height: 25px;
+    text-align: center;
+}
+.task-list-con .seller_li p {
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.task-list-con .btnbox {
+    padding-top: 0.8rem;
+}
+.task-list-con > .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.task-list-con > .row > .col-lg-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
 }
