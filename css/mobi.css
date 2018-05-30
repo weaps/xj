@@ -129,9 +129,27 @@ pre code {
 }
 
 blockquote {
-    border-left: 5px solid #ddd;
+    border-left: 4px solid #eee;
     color: #777;
     padding-left: 0.9375rem;
+}
+blockquote footer, blockquote small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857143;
+    color: #777;
+    font-style: normal;
+}
+blockquote > .name {
+    margin: 0 0 10px;
+    color: #333;
+}
+blockquote footer::before {
+    content: "\2014 \00A0";
+    color: #ddd;
+}
+blockquote ~ blockquote {
+    margin-top: 2rem;
 }
 
 dl,
@@ -831,6 +849,7 @@ a.text-primary {
 .topNav .language a {
     padding: 0 .2rem;
     color: #666;
+    line-height: 35px;
 }
 .topNav .language a:first-child {
     padding-left: 0;
