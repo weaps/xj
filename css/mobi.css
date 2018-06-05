@@ -681,29 +681,29 @@ progress {
 }
 
 /* orange */
-.orange {
+.button.orange {
 	color: #fef4e9;
-	border: solid 1px #da7c0c;
-	background: #f78d1d;
-	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	border: solid 1px #ff5000;
+	background: #ff5000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff6f06), to(#ff5000));
+	background: -moz-linear-gradient(top,  #ff6f06,  #ff5000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6f06', endColorstr='#ff5000');
 }
-.orange:hover {
+.button.orange:hover {
 	background: #f47c20;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
 	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 }
-.orange:active {
+.button.orange:active {
 	color: #fcd3a5;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
-	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff5000), to(#ff6f06));
+	background: -moz-linear-gradient(top,  #ff5000,  #ff6f06);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5000', endColorstr='#ff6f06');
 }
 /* blue */
 
-.blue {
+.button.blue {
     color: #d9eef7;
     border: solid 1px #0076a3;
     background: #0095cd;
@@ -712,38 +712,55 @@ progress {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
 }
 
-.blue:hover {
+.button.blue:hover {
     background: #007ead;
     background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
     background: -moz-linear-gradient(top, #0095cc, #00678e);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
 }
 
-.blue:active {
+.button.blue:active {
     color: #80bed6;
     background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
     background: -moz-linear-gradient(top, #0078a5, #00adee);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
 }
 
-.ui.steps {
+.ui.steps,
+.ui-step-wrap .ui-step {
     width: 100%;
-    height: 42px;
     margin: 1em 0;
-    line-height: 1.14285714em;
-    border-radius: .28571429rem;
-    border: 1px solid rgba(34, 36, 38, .15);
+    
     box-sizing: border-box;
 
     display: -webkit-box; 
     display: -webkit-flex;
     display: flex;
 }
+.ui.steps {
+    height: 42px;
+    line-height: 1.14285714em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
 
 .ui.steps:last-child {
     margin-bottom: 0;
 }
 
+.ui.steps .step,
+.ui-step-wrap .ui-step .ui-step-item { 
+    position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 16px;
+	width: 0%;
+
+	-webkit-box-flex: 1;
+	-webkit-flex 1;
+	flex: 1;
+}
 .ui.steps .step {
     height: 40px;
     margin: 0;
@@ -754,32 +771,11 @@ progress {
     border-radius: 0;
     border: none;
     border-right: 1px solid rgba(34, 36, 38, .15);
-
-    position: relative;
-	display: block;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	font-size: 16px;
-
-	width: 0%;
-
-	-webkit-box-flex: 1;
-	-webkit-flex 1;
-	flex: 1;
 }
 
 .ui.step,
 .ui.steps .step {
     font-size: 1rem;
-}
-.ui.steps.primary .step {
-    background: #00b8f5;
-    color: #fff;
-    border-color: #fff;
-}
-.ui.steps.primary .step::after {
-    background: #00b8f5;
-    border-color: rgba(255, 255, 255, 1);
 }
 .ui.steps .step .content {
     line-height: 30px;
@@ -839,16 +835,16 @@ progress {
     font-size: 12px;
     font-weight: 700;
 }
-.ui.steps .completed.step .icon-num {
+.ui.steps .step .icon-num {
     display: inline-block;
     width: 16px;
     height: 16px;
     border-radius: 10px;
-    background: #fff;
+    background: #05CC47;
     text-align: center;
     line-height: 16px;
     font-style: normal;
-    color: #4FB0FF;
+    color: #fff;
 }
 .ui.steps .active.step .iconfont {
     color: #4FB0FF;
@@ -856,6 +852,130 @@ progress {
 .ui.steps .step:last-child:after {
     display: none;
 }
+
+/* primary */
+.ui.steps.primary {
+    border-color: #00b8f5;
+}
+.ui.steps.primary .step {
+    background: #00b8f5;
+    color: #fff;
+    border-color: #fff;
+}
+.ui.steps.primary .step::after {
+    background: #00b8f5;
+    border-color: rgba(255, 255, 255, 1);
+}
+.ui.steps.primary .step .icon-num {
+    background: #fff;
+    color: #4FB0FF;
+}
+
+/* 步骤2 */
+.ui-step-wrap {
+    position: relative;
+    margin: 2rem 0;
+}
+.ui-step-wrap .ui-step {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+}
+.ui-step-wrap .ui-step-line {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.ui-step-wrap .ui-step .ui-step-item {
+    position: relative;
+    text-align: center;
+}
+.ui-step-wrap .ui-step .ui-step-item-title {
+    font-size: 12px;
+    padding: 10px 20px;
+    color: #bbb;
+}
+.ui-step-item .ui-step-item-num {
+    height: 30px;
+}
+.ui-step-item .ui-step-item-num .line {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+}
+
+/* green */
+.ui-step-item.green.completed .ui-step-item-num .line,
+.ui-step-item.green.completed .ui-step-item-num span {
+    background: #05CC47;
+    color: #fff;
+}
+.ui-step-wrap.green .ui-step-item .ui-step-item-num span,
+.ui-step-wrap.green .ui-step-item.orange.completed .ui-step-item-num .line {
+    background: #05CC47 !important;
+}
+.ui-step-wrap.green .ui-step-line {
+    background: #05CC47;
+}
+
+/* orange */
+.ui-step-item.orange.completed .ui-step-item-num .line,
+.ui-step-item.orange.completed .ui-step-item-num span {
+    background: #ff5000;
+    color: #fff;
+}
+.ui-step-wrap.orange .ui-step-item .ui-step-item-num span,
+.ui-step-wrap.orange .ui-step-item.green.completed .ui-step-item-num .line {
+    background: #ff5000 !important;
+    color: #fff;
+}
+.ui-step-wrap.orange .ui-step-line {
+    background: #ff5000;
+}
+.ui-step-wrap.orange .ui-step-item .ui-step-item-num span,
+.ui-step-wrap.green .ui-step-item .ui-step-item-num span {
+    color: #fff;
+}
+
+.ui-step-wrap.green .ui-step-item .ui-step-item-title,
+.ui-step-wrap.orange .ui-step-item .ui-step-item-title,
+.ui-step-item.completed .ui-step-item-title {
+    color: #333;
+}
+
+.ui-step-wrap .ui-step .ui-step-item.completed:first-child .ui-step-item-num .line {
+    border-radius: 14px 0 0 14px;
+}
+.ui-step-wrap .ui-step .ui-step-item.completed:last-child .ui-step-item-num .line {
+    border-radius: 0 14px 14px 0;
+}
+.ui-step-item .ui-step-item-num span {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    z-index: 10;
+}
+
+
+
+
+
 
 
 .label {
@@ -1481,10 +1601,8 @@ a.text-primary {
 
 /* 面包屑 */
 .breadcrumb {
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 15px 0;
     font-size: 12px;
-    border-bottom: 1px solid rgba(221, 221, 221, .5);
 }
 
 .breadcrumb li {
@@ -1771,8 +1889,6 @@ a.cndns-right-btn i {
 .meau-zs .cndns-right-btn p {
     color: #fff
 }
-
-/* end */
 
 
 /* panel */
