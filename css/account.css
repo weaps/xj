@@ -799,7 +799,7 @@ body {
     margin: 20px 0;
 }
 .mod-main {
-    padding: 25px 15px;
+    padding: 25px;
     background-color: #fff;
     /* color:#fff; */
 }
@@ -946,18 +946,20 @@ body {
 }
 
 .follow ul {
-    display: inline-block;
     display: block;
-    z-index: 1;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 
 .follow ul li {
     float: left;
     padding: 10px 0;
-    margin: 0 13px 0 13px;
-    width: 126px;
+    width: 20%;
     text-align: center
+}
+.follow .fol-item {
+    width: 126px;
+    margin: 0 auto;
 }
 
 .follow .p-price {
