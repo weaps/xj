@@ -1921,3 +1921,69 @@ a.cndns-right-btn i {
 .panel-body {
     padding: 15px;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 750px;
+    height: 580px;
+    padding-right: 50px;
+    margin: -290px 0 0 -350px;
+    z-index: 1060;
+    vertical-align: middle;
+}
+.modal-content .imgbox {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background: url(../img/vo60_alert.png) no-repeat;
+    background-size: cover;
+}
+.modal-content .imgbox img {
+    width: 100%;
+    vertical-align: middle;
+}
+.modal-content .imgbox .btnbox {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 320px;
+    height: 70px;
+    margin-left: -160px;
+    /* background: #fff; */
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* z-index: 1051; */
+    background-color: rgba(0, 0, 0, .67);
+}
+.modal-content .close {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+.modal-content .close .iconfont {
+    font-size: 24px;
+    font-weight: 100;
+    /* color: rgba(255, 255, 255, 0.6); */
+    /* color: rgba(0, 0, 0, .87); */
+}
