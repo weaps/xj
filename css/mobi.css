@@ -565,7 +565,8 @@ progress {
 .btn[disabled],
 .btn-primary[disabled],
 .btn-danger[disabled],
-.btn-orange[disabled] {
+.btn-orange[disabled],
+.button[disabled] {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
@@ -930,16 +931,16 @@ progress {
 /* orange */
 .ui-step-item.orange.completed .ui-step-item-num .line,
 .ui-step-item.orange.completed .ui-step-item-num span {
-    background: #ff5000;
+    background: #ff6f06;
     color: #fff;
 }
 .ui-step-wrap.orange .ui-step-item .ui-step-item-num span,
 .ui-step-wrap.orange .ui-step-item.green.completed .ui-step-item-num .line {
-    background: #ff5000 !important;
+    background: #ff6f06 !important;
     color: #fff;
 }
 .ui-step-wrap.orange .ui-step-line {
-    background: #ff5000;
+    background: #ff6f06;
 }
 .ui-step-wrap.orange .ui-step-item .ui-step-item-num span,
 .ui-step-wrap.green .ui-step-item .ui-step-item-num span {
