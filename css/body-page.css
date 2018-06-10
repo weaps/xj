@@ -1650,7 +1650,6 @@ body {
 }
 .view-list2-con li h3 {
     width: 100%;
-    height: 30px;
     margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3223,4 +3222,169 @@ body {
 }
 .rongzi .detail-descript {
     padding-bottom: 3rem;
+}
+
+.item_con {
+    background: #fff;
+    overflow: hidden;
+}
+.info_head {
+    padding: 35px 35px 43px 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.info_head .avatar {
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: #eee;
+}
+.info_name_other {
+    margin-left: 120px;
+    padding-left: 1.5rem;
+    vertical-align: top;
+}
+.info_name_other .name {
+    line-height: 38px;
+    padding-bottom: 0.5rem;
+}
+.info_name_other .name .label {
+    padding: .2em .6em;
+    font-size: 12px;
+    font-weight: normal;
+}
+.info_name_other p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.item_con .info_detail {
+    /* background: #fffbf6; */
+    padding: 1rem 2rem;
+    font-size: 14px;
+}
+.item_con .info_detail p {
+    line-height: 30px;
+}
+.item_con .info_detail .p_text strong {
+    float: left;
+}
+.item_con .info_detail .p_text span {
+    display: block;
+    margin-left: 70px;
+    color: #666;
+}
+.jjr .imgbox {
+    padding: 2rem;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+.jjr .imgbox .btn_arrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px;
+}
+.jjr .imgbox .btn_arrow a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+}
+.jjr .imgbox .btn_arrow a .icon {
+    font-size: 12px;
+}
+.jjr .userinfo {
+    position: relative;
+    background: #FFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 4px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.jjr .userinfo img {
+    width: 240px;
+    display: inline-block;
+}
+
+.jjr .leftbox {
+    float: left;
+    width: 835px;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+.jjr .user_reward {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    overflow: hidden;
+    padding: 30px 34px 34px 34px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.jjr .user_reward h2 {
+    font-weight: 700;
+    color: #333333;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.jjr .user_reward .conbox p {
+    margin-bottom: 1rem;
+    text-indent: 2em;
+    font-size: 14px;
+}
+.jjr .info-access {
+    height: 100%;
+    padding: 26px 0 30px 0;
+}
+.jjr .rightbox {
+    float: right;
+    width: 335px;
+}
+.jjr .info-access {
+    height: 100%;
+    padding: 30px 2rem;
+}
+
+.jjr .info-user-access {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.info-content {
+    margin-bottom: 8px;
+}
+.info-content .info-line {
+    display: inline-block;
+    width: 130px;
+    height: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.info-content .info-line .info-line-inner {
+    display: inline-block;
+    background: #ff8c14;
+    height: 8px;
+    width: 0%;
+    vertical-align: top;
+}
+.info-standard {
+    line-height: 12px;
+    margin-left: 24px;
+    font-size: 12px;
+}
+.jjr .rightbox .btnbox {
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    padding: 2rem;
 }
